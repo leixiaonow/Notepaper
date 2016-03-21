@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_enabled="false" android:drawable="@drawable/mz_ic_tab_share_disable_dark" />
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/mz_ic_tab_share_disable_dark" android:state_enabled="false" />
     <item android:drawable="@drawable/mz_ic_tab_share_normal_dark" />
 </selector>

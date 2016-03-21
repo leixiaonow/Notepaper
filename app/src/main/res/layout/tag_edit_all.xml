@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/tag_list_text_size" android:textColor="@color/tag_text_color" android:ellipsize="middle" android:gravity="center_vertical" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/tag_item_title_left_margin" android:minHeight="?android:listPreferredItemHeightSmall" android:text="@string/all_tag" android:maxLines="1" android:singleLine="true" />
-    <ImageView android:background="@drawable/mz_drawer_list_divider_light" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/tag_item_title_left_margin"
+        android:ellipsize="middle"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:minHeight="?android:listPreferredItemHeightSmall"
+        android:singleLine="true"
+        android:text="@string/all_tag"
+        android:textColor="@color/tag_text_color"
+        android:textSize="@dimen/tag_list_text_size" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mz_drawer_list_divider_light" />
 </LinearLayout>

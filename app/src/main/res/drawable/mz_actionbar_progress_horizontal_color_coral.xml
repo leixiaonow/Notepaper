@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layer-list
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@android:id/background" android:drawable="@android:color/transparent" />
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@android:id/background"
+        android:drawable="@android:color/transparent" />
     <item android:id="@android:id/secondaryProgress">
-        <clip android:gravity="left" android:drawable="@color/mz_theme_color_coral" android:clipOrientation="horizontal" />
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@color/mz_theme_color_coral"
+            android:gravity="left" />
     </item>
     <item android:id="@android:id/progress">
-        <clip android:gravity="left" android:drawable="@color/mz_theme_color_coral" android:clipOrientation="horizontal" />
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@color/mz_theme_color_coral"
+            android:gravity="left" />
     </item>
 </layer-list>

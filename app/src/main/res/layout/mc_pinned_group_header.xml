@@ -1,7 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:gravity="bottom" android:id="@id/mc_pinned_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/mz_pinned_interval_header_minHeight"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:gravity="center_vertical" android:id="@id/mc_header_text1" android:paddingLeft="?android:listPreferredItemPaddingLeft" android:paddingRight="?android:listPreferredItemPaddingRight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/mz_pinned_interval_header_title_height" android:layout_alignParentLeft="true" />
-    <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="center_vertical" android:id="@id/mc_header_text2" android:paddingLeft="?android:listPreferredItemPaddingLeft" android:paddingRight="?android:listPreferredItemPaddingRight" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/mz_pinned_interval_header_title_height" android:layout_alignParentRight="true" />
-    <ImageView android:gravity="bottom" android:id="@android:id/background" android:background="@drawable/mz_card_new_list_divider" android:layout_width="fill_parent" android:layout_height="@dimen/mz_group_interval_header_divider_height" android:layout_alignParentBottom="true" />
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/mc_pinned_header"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:minHeight="@dimen/mz_pinned_interval_header_minHeight">
+
+    <TextView
+        android:id="@id/mc_header_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/mz_pinned_interval_header_title_height"
+        android:paddingLeft="?android:listPreferredItemPaddingLeft"
+        android:paddingRight="?android:listPreferredItemPaddingRight"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@id/mc_header_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/mz_pinned_interval_header_title_height"
+        android:paddingLeft="?android:listPreferredItemPaddingLeft"
+        android:paddingRight="?android:listPreferredItemPaddingRight"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@android:id/background"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/mz_group_interval_header_divider_height"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/mz_card_new_list_divider"
+        android:gravity="bottom" />
 </RelativeLayout>

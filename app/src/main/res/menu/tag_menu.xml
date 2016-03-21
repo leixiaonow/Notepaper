@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu
-  xmlns:android="http://schemas.android.com/apk/prv/res/android">
-    <item android:id="@id/done" android:title="@string/ime_action_done" />
+<menu xmlns:android="http://schemas.android.com/apk/prv/res/android">
+    <item
+        android:id="@id/done"
+        android:title="@string/ime_action_done" />
 </menu>

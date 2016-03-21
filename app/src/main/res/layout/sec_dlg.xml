@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <CheckBox android:textSize="@dimen/mz_resolve_grid_item_text_size" android:textColor="#ff808080" android:id="@id/check" android:background="@null" android:paddingLeft="12.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="36.0dip" android:layout_marginBottom="12.0dip" android:checked="true"
-      xmlns:android="http://schemas.android.com/apk/res/android" /> />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@id/check"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12.0dip"
+        android:layout_marginLeft="36.0dip"
+        android:background="@null"
+        android:checked="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingLeft="12.0dip"
+        android:textColor="#ff808080"
+        android:textSize="@dimen/mz_resolve_grid_item_text_size" />
+    />
 </LinearLayout>

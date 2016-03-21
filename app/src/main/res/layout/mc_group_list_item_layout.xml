@@ -1,3 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.meizu.common.widget.PartitionItemLayout android:id="@id/mc_item_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" />
+<com.meizu.common.widget.PartitionItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/mc_item_container"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" />

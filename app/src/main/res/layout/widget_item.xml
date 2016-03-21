@@ -1,20 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:id="@id/root" android:background="#33000000" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:orientation="vertical" android:id="@id/item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="1.0px" android:minHeight="@dimen/widget_single_line_height">
-        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/item0" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/widget_text_horizontal_margin" android:layout_marginRight="@dimen/widget_text_horizontal_margin" android:minHeight="@dimen/widget_single_line_height">
-            <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:ellipsize="end" android:autoLink="all" android:linksClickable="false" android:id="@id/title" android:background="@null" android:focusable="false" android:visibility="gone" android:clickable="false" android:longClickable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:bufferType="editable" android:hint="@null" android:singleLine="true" android:includeFontPadding="false" android:layout_weight="1.0" />
-            <ImageView android:id="@id/record0" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wg_ic_play" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#33000000"
+    android:orientation="vertical"
+    android:paddingLeft="0.0dip"
+    android:paddingRight="0.0dip">
+
+    <LinearLayout
+        android:id="@id/item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1.0px"
+        android:minHeight="@dimen/widget_single_line_height"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@id/item0"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/widget_text_horizontal_margin"
+            android:layout_marginRight="@dimen/widget_text_horizontal_margin"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/widget_single_line_height"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@id/title"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:autoLink="all"
+                android:background="@null"
+                android:bufferType="editable"
+                android:clickable="false"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:hint="@null"
+                android:includeFontPadding="false"
+                android:linksClickable="false"
+                android:longClickable="false"
+                android:singleLine="true"
+                android:textColor="#ff000000"
+                android:textSize="14.0sp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@id/record0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/wg_ic_play"
+                android:visibility="gone" />
         </LinearLayout>
-        <ImageView android:id="@id/divide_line" android:background="@drawable/widget_divide_line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/widget_title_divider_margin" android:layout_marginRight="@dimen/widget_title_divider_margin" />
-        <ImageView android:id="@id/picture" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/widget_image_margin" android:layout_marginTop="@dimen/widget_image_margin" android:layout_marginRight="@dimen/widget_image_margin" android:scaleType="centerCrop" android:adjustViewBounds="true" android:maxHeight="@dimen/widget_image_height" />
-        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/widget_text_horizontal_margin" android:layout_marginRight="@dimen/widget_text_horizontal_margin">
-            <LinearLayout android:orientation="vertical" android:id="@id/text_parent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_text_top_margin" android:layout_marginBottom="@dimen/widget_text_bottom_margin" android:layout_weight="1.0" />
-            <ImageView android:id="@id/record" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_record_top_margin" android:src="@drawable/wg_ic_play" />
+
+        <ImageView
+            android:id="@id/divide_line"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="@dimen/widget_title_divider_margin"
+            android:layout_marginRight="@dimen/widget_title_divider_margin"
+            android:background="@drawable/widget_divide_line"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@id/picture"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/widget_image_margin"
+            android:layout_marginRight="@dimen/widget_image_margin"
+            android:layout_marginTop="@dimen/widget_image_margin"
+            android:adjustViewBounds="true"
+            android:maxHeight="@dimen/widget_image_height"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/widget_text_horizontal_margin"
+            android:layout_marginRight="@dimen/widget_text_horizontal_margin"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@id/text_parent"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/widget_text_bottom_margin"
+                android:layout_marginTop="@dimen/widget_text_top_margin"
+                android:layout_weight="1.0"
+                android:orientation="vertical" />
+
+            <ImageView
+                android:id="@id/record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widget_record_top_margin"
+                android:src="@drawable/wg_ic_play"
+                android:visibility="gone" />
         </LinearLayout>
-        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/audio_note" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/widget_text_horizontal_margin" android:layout_marginRight="@dimen/widget_text_horizontal_margin" android:minHeight="@dimen/widget_single_line_height">
-            <TextView android:textSize="@dimen/widget_text_font_size" android:textColor="#cc000000" android:ellipsize="end" android:autoLink="all" android:linksClickable="false" android:background="@null" android:focusable="false" android:clickable="false" android:longClickable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/audio_note" android:hint="@null" android:maxLines="1" android:layout_weight="1.0" />
-            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wg_ic_play" />
+
+        <LinearLayout
+            android:id="@id/audio_note"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/widget_text_horizontal_margin"
+            android:layout_marginRight="@dimen/widget_text_horizontal_margin"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/widget_single_line_height"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:autoLink="all"
+                android:background="@null"
+                android:clickable="false"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:hint="@null"
+                android:linksClickable="false"
+                android:longClickable="false"
+                android:maxLines="1"
+                android:text="@string/audio_note"
+                android:textColor="#cc000000"
+                android:textSize="@dimen/widget_text_font_size" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/wg_ic_play" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

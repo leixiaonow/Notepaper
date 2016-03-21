@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="top" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/stagger_text_bottom_margin"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/check" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/stagger_check_left_margin" android:layout_marginRight="@dimen/stagger_check_right_margin" android:src="@null" />
-    <com.meizu.flyme.notepaper.widget.StaggerText android:textSize="@dimen/stagger_font_size" android:textColor="@color/stagger_text_color" android:ellipsize="end" android:autoLink="all" android:linksClickable="true" android:id="@id/text" android:background="@null" android:paddingTop="@dimen/stagger_text_top_margin" android:focusable="false" android:clickable="false" android:longClickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@null" android:maxLines="4" android:includeFontPadding="false" android:lineSpacingExtra="@dimen/stagger_line_space" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/stagger_text_bottom_margin"
+    android:gravity="top"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/stagger_check_left_margin"
+        android:layout_marginRight="@dimen/stagger_check_right_margin"
+        android:src="@null"
+        android:visibility="gone" />
+
+    <com.meizu.flyme.notepaper.widget.StaggerText
+        android:id="@id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="all"
+        android:background="@null"
+        android:clickable="false"
+        android:ellipsize="end"
+        android:focusable="false"
+        android:hint="@null"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="@dimen/stagger_line_space"
+        android:linksClickable="true"
+        android:longClickable="false"
+        android:maxLines="4"
+        android:paddingTop="@dimen/stagger_text_top_margin"
+        android:textColor="@color/stagger_text_color"
+        android:textSize="@dimen/stagger_font_size" />
 </LinearLayout>

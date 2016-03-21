@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.meizu.flyme.notepaper.widget.TagScrollView android:id="@id/category_list" android:fitsSystemWindows="true" android:scrollbars="none" android:fadingEdge="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="always"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <FrameLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/group_list_sliding_menu_min_heigh">
-        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/parent" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+<com.meizu.flyme.notepaper.widget.TagScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/category_list"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipToPadding="false"
+    android:fadingEdge="none"
+    android:fitsSystemWindows="true"
+    android:overScrollMode="always"
+    android:scrollbars="none">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="@dimen/group_list_sliding_menu_min_heigh">
+
+        <LinearLayout
+            android:id="@id/parent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical" />
     </FrameLayout>
 </com.meizu.flyme.notepaper.widget.TagScrollView>

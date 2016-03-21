@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_height="114.399994dip" android:layout_marginTop="@dimen/mc_custom_picker_layout_margin_top" android:layout_marginBottom="@dimen/mc_custom_picker_layout_margin_bottom" style="@style/Widget.MeizuCommon.McPickerLayout"
-  xmlns:android="http://schemas.android.com/apk/res/android">
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.MeizuCommon.McPickerLayout"
+    android:layout_height="114.399994dip"
+    android:layout_marginBottom="@dimen/mc_custom_picker_layout_margin_bottom"
+    android:layout_marginTop="@dimen/mc_custom_picker_layout_margin_top">
+
     <include layout="@layout/mc_date_picker_base" />
 </FrameLayout>

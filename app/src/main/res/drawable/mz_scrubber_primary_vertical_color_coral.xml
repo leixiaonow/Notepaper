@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_enabled="false" android:drawable="@drawable/mz_scrubber_primary_vertical_disable_color_coral" />
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/mz_scrubber_primary_vertical_disable_color_coral" android:state_enabled="false" />
     <item android:drawable="@drawable/mz_scrubber_primary_vertical_normal_color_coral" />
 </selector>

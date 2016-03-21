@@ -27,8 +27,8 @@
     <dimen name="color_cell_size">52.5dip</dimen>
     <dimen name="color_panel_height">63.0dip</dimen>
     <dimen name="color_panel_horizontal_margin">22.0dip</dimen>
-    <item type="dimen" name="dialog_fixed_height_major">79.99999%</item>
-    <item type="dimen" name="dialog_fixed_height_minor">100.0%</item>
+    <item name="dialog_fixed_height_major" type="dimen">79.99999%</item>
+    <item name="dialog_fixed_height_minor" type="dimen">100.0%</item>
     <dimen name="dialog_fixed_width_major">320.0dip</dimen>
     <dimen name="dialog_fixed_width_minor">320.0dip</dimen>
     <dimen name="drag_tag_bound">64.0dip</dimen>
@@ -330,7 +330,7 @@
     <dimen name="mz_notification_min_height">56.0dip</dimen>
     <dimen name="mz_notification_small_icon_height">40.0dip</dimen>
     <dimen name="mz_notification_small_icon_width">40.0dip</dimen>
-    <item type="dimen" name="mz_over_scroll_distance">@dimen/mz_list_item_height</item>
+    <item name="mz_over_scroll_distance" type="dimen">@dimen/mz_list_item_height</item>
     <dimen name="mz_picker_column_1_text_margin_right">162.0dip</dimen>
     <dimen name="mz_picker_column_2_text_margin_right">16.799988dip</dimen>
     <dimen name="mz_picker_column_3_text_1_margin_right">0.0dip</dimen>

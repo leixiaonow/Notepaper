@@ -1,15 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="9.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:orientation="horizontal" android:background="@drawable/wg_notes_bg" android:layout_width="fill_parent" android:layout_height="50.0dip">
-        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/new_note" android:paddingLeft="@dimen/widget_text_horizontal_margin" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/new_note" android:singleLine="true" android:includeFontPadding="false" android:layout_weight="1.0" />
-        <ImageView android:id="@id/edit" android:background="@drawable/bg_widget_select_right" android:paddingLeft="@dimen/widget_text_horizontal_margin" android:paddingRight="@dimen/widget_text_horizontal_margin" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/wg_ic_unfold" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="9.0dip"
+    android:layout_marginLeft="3.0dip"
+    android:layout_marginRight="3.0dip"
+    android:layout_marginTop="9.0dip"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@drawable/wg_notes_bg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@id/new_note"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:clickable="false"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:paddingLeft="@dimen/widget_text_horizontal_margin"
+            android:singleLine="true"
+            android:text="@string/new_note"
+            android:textColor="#ffffffff"
+            android:textSize="18.0sp" />
+
+        <ImageView
+            android:id="@id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/bg_widget_select_right"
+            android:paddingLeft="@dimen/widget_text_horizontal_margin"
+            android:paddingRight="@dimen/widget_text_horizontal_margin"
+            android:src="@drawable/wg_ic_unfold" />
     </LinearLayout>
-    <LinearLayout android:orientation="vertical" android:background="@drawable/wg_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <ListView android:scrollbarThumbVertical="@drawable/mz_scrollbar_handle_vertical" android:scrollbarStyle="outsideOverlay" android:id="@id/listview" android:paddingLeft="17.0dip" android:paddingTop="14.0dip" android:paddingRight="17.0dip" android:paddingBottom="14.0dip" android:fadingEdge="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/widget_list_horizontal_margin" android:layout_marginTop="@dimen/widget_list_vertical_margin" android:layout_marginRight="@dimen/widget_list_horizontal_margin" android:layout_marginBottom="@dimen/widget_list_vertical_margin" android:drawSelectorOnTop="true" android:divider="@null" android:dividerHeight="@dimen/widget_list_divider_height" />
-        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
-            <TextView android:textSize="14.0sp" android:textColor="#80000000" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/custom_note" />
-            <TextView android:textSize="14.0sp" android:textColor="#80000000" android:gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/operation_path" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/wg_bg"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@id/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="@dimen/widget_list_vertical_margin"
+            android:layout_marginLeft="@dimen/widget_list_horizontal_margin"
+            android:layout_marginRight="@dimen/widget_list_horizontal_margin"
+            android:layout_marginTop="@dimen/widget_list_vertical_margin"
+            android:clipToPadding="false"
+            android:divider="@null"
+            android:dividerHeight="@dimen/widget_list_divider_height"
+            android:drawSelectorOnTop="true"
+            android:fadingEdge="none"
+            android:paddingBottom="14.0dip"
+            android:paddingLeft="17.0dip"
+            android:paddingRight="17.0dip"
+            android:paddingTop="14.0dip"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbarThumbVertical="@drawable/mz_scrollbar_handle_vertical" />
+
+        <LinearLayout
+            android:id="@id/empty_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/custom_note"
+                android:textColor="#80000000"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/operation_path"
+                android:textColor="#80000000"
+                android:textSize="14.0sp"
+                android:visibility="gone" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

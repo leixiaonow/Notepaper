@@ -1,18 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:icon="@drawable/mz_sb_share" android:id="@id/menu_share" android:title="@string/menu_share" android:showAsAction="always" />
-    <item android:icon="@drawable/mz_sb_delete" android:id="@id/menu_delete_browse" android:title="@string/menu_delete" android:showAsAction="always" />
-    <item android:id="@id/menu_top" android:title="@string/menu_top" android:checkable="true" android:showAsAction="never" />
-    <item android:id="@id/menu_change_paper" android:title="@string/menu_change_paper" android:showAsAction="never" />
-    <item android:id="@id/menu_desktop" android:title="@string/send_to_desktop" android:checkable="true" android:showAsAction="never" />
-    <item android:id="@id/menu_float" android:visible="false" android:title="@string/menu_float" android:showAsAction="never" />
-    <item android:id="@id/menu_encrypt" android:visible="false" android:title="@string/menu_encrypt" android:showAsAction="never" />
-    <item android:id="@id/menu_export_pic" android:visible="false" android:title="@string/menu_export_pic" android:showAsAction="never" />
-    <item android:id="@id/menu_export" android:visible="false" android:title="@string/menu_export" android:showAsAction="never">
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@id/menu_share"
+        android:icon="@drawable/mz_sb_share"
+        android:showAsAction="always"
+        android:title="@string/menu_share" />
+    <item
+        android:id="@id/menu_delete_browse"
+        android:icon="@drawable/mz_sb_delete"
+        android:showAsAction="always"
+        android:title="@string/menu_delete" />
+    <item
+        android:id="@id/menu_top"
+        android:checkable="true"
+        android:showAsAction="never"
+        android:title="@string/menu_top" />
+    <item
+        android:id="@id/menu_change_paper"
+        android:showAsAction="never"
+        android:title="@string/menu_change_paper" />
+    <item
+        android:id="@id/menu_desktop"
+        android:checkable="true"
+        android:showAsAction="never"
+        android:title="@string/send_to_desktop" />
+    <item
+        android:id="@id/menu_float"
+        android:showAsAction="never"
+        android:title="@string/menu_float"
+        android:visible="false" />
+    <item
+        android:id="@id/menu_encrypt"
+        android:showAsAction="never"
+        android:title="@string/menu_encrypt"
+        android:visible="false" />
+    <item
+        android:id="@id/menu_export_pic"
+        android:showAsAction="never"
+        android:title="@string/menu_export_pic"
+        android:visible="false" />
+    <item
+        android:id="@id/menu_export"
+        android:showAsAction="never"
+        android:title="@string/menu_export"
+        android:visible="false">
         <menu>
-            <item android:id="@id/submenu_export_pic" android:title="@string/menu_export_pic" android:showAsAction="always" />
-            <item android:id="@id/submenu_export_text" android:title="@string/menu_export_text" android:showAsAction="always" />
+            <item
+                android:id="@id/submenu_export_pic"
+                android:showAsAction="always"
+                android:title="@string/menu_export_pic" />
+            <item
+                android:id="@id/submenu_export_text"
+                android:showAsAction="always"
+                android:title="@string/menu_export_text" />
         </menu>
     </item>
 </menu>

@@ -1,131 +1,184 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <style name="ActionBarStyle" parent="@android:style/Widget.DeviceDefault.Light.ActionBar">
         <item name="android:background">@color/title_mask_color</item>
         <item name="android:backgroundSplit">@color/actionbar_mask_color</item>
     </style>
+
     <style name="ActionModeStyle" parent="@android:style/Widget.DeviceDefault.Light.ActionMode">
         <item name="android:background">@color/title_mask_color</item>
         <item name="android:backgroundSplit">@color/actionbar_mask_color</item>
     </style>
+
     <style name="AnimationPopup" parent="@android:style/Animation">
         <item name="android:windowEnterAnimation">@anim/background_popup_enter</item>
         <item name="android:windowExitAnimation">@anim/background_popup_exit</item>
     </style>
+
     <style name="AppBaseTheme" parent="@style/Theme.DeviceDefault.Light.Color.Coral" />
+
     <style name="AppTheme" parent="@style/AppBaseTheme">
         <item name="android:windowActionBarOverlay">true</item>
         <item name="android:windowTranslucentStatus">true</item>
     </style>
+
     <style name="TextAppearance.AppCompat.Base.CompactMenu.Dialog" parent="@android:style/TextAppearance.Medium">
         <item name="android:textColor">@android:color/primary_text_light</item>
     </style>
+
     <style name="TextAppearance.AppCompat.Base.SearchResult" parent="">
         <item name="android:textStyle">normal</item>
         <item name="android:textColor">?android:textColorPrimary</item>
         <item name="android:textColorHint">?android:textColorHint</item>
     </style>
+
     <style name="TextAppearance.AppCompat.Base.SearchResult.Subtitle" parent="@style/TextAppearance.AppCompat.Base.SearchResult">
         <item name="android:textSize">14.0sp</item>
         <item name="android:textColor">?android:textColorSecondary</item>
     </style>
+
     <style name="TextAppearance.AppCompat.Base.SearchResult.Title" parent="@style/TextAppearance.AppCompat.Base.SearchResult">
         <item name="android:textSize">18.0sp</item>
     </style>
+
     <style name="TextAppearance.AppCompat.Base.Widget.PopupMenu.Large" parent="@android:style/TextAppearance.Widget">
         <item name="android:textSize">18.0sp</item>
         <item name="android:textColor">?android:textColorPrimaryDisableOnly</item>
     </style>
+
     <style name="TextAppearance.AppCompat.Base.Widget.PopupMenu.Small" parent="@android:style/TextAppearance.Widget">
         <item name="android:textSize">14.0sp</item>
         <item name="android:textColor">?android:textColorPrimaryDisableOnly</item>
     </style>
+
     <style name="TextAppearance.AppCompat.Light.Base.SearchResult" parent="@style/TextAppearance.AppCompat.Base.SearchResult">
         <item name="android:textColor">?android:textColorPrimary</item>
         <item name="android:textColorHint">?android:textColorHint</item>
     </style>
+
     <style name="TextAppearance.AppCompat.Light.Base.SearchResult.Subtitle" parent="@style/TextAppearance.AppCompat.Light.Base.SearchResult">
         <item name="android:textSize">14.0sp</item>
         <item name="android:textColor">?android:textColorSecondary</item>
     </style>
+
     <style name="TextAppearance.AppCompat.Light.Base.SearchResult.Title" parent="@style/TextAppearance.AppCompat.Light.Base.SearchResult">
         <item name="android:textSize">18.0sp</item>
     </style>
+
     <style name="TextAppearance.AppCompat.Light.Base.Widget.PopupMenu.Large" parent="@style/TextAppearance.AppCompat.Base.Widget.PopupMenu.Large" />
+
     <style name="TextAppearance.AppCompat.Light.Base.Widget.PopupMenu.Small" parent="@style/TextAppearance.AppCompat.Base.Widget.PopupMenu.Small" />
+
     <style name="TextAppearance.AppCompat.Light.SearchResult.Subtitle" parent="@style/TextAppearance.AppCompat.Light.Base.SearchResult.Subtitle" />
+
     <style name="TextAppearance.AppCompat.Light.SearchResult.Title" parent="@style/TextAppearance.AppCompat.Light.Base.SearchResult.Title" />
+
     <style name="TextAppearance.AppCompat.Light.Widget.PopupMenu.Large" parent="@style/TextAppearance.AppCompat.Light.Base.Widget.PopupMenu.Large" />
+
     <style name="TextAppearance.AppCompat.Light.Widget.PopupMenu.Small" parent="@style/TextAppearance.AppCompat.Light.Base.Widget.PopupMenu.Small" />
+
     <style name="TextAppearance.AppCompat.SearchResult.Subtitle" parent="@style/TextAppearance.AppCompat.Base.SearchResult.Subtitle" />
+
     <style name="TextAppearance.AppCompat.SearchResult.Title" parent="@style/TextAppearance.AppCompat.Base.SearchResult.Title" />
+
     <style name="TextAppearance.AppCompat.Widget.ActionBar.Menu" parent="@style/TextAppearance.AppCompat.Widget.Base.ActionBar.Menu" />
+
     <style name="TextAppearance.AppCompat.Widget.ActionBar.Subtitle" parent="@style/TextAppearance.AppCompat.Widget.Base.ActionBar.Subtitle" />
+
     <style name="TextAppearance.AppCompat.Widget.ActionBar.Subtitle.Inverse" parent="@style/TextAppearance.AppCompat.Widget.Base.ActionBar.Subtitle.Inverse" />
+
     <style name="TextAppearance.AppCompat.Widget.ActionBar.Title" parent="@style/TextAppearance.AppCompat.Widget.Base.ActionBar.Title" />
+
     <style name="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse" parent="@style/TextAppearance.AppCompat.Widget.Base.ActionBar.Title.Inverse" />
+
     <style name="TextAppearance.AppCompat.Widget.ActionMode.Subtitle" parent="@style/TextAppearance.AppCompat.Widget.Base.ActionMode.Subtitle" />
+
     <style name="TextAppearance.AppCompat.Widget.ActionMode.Subtitle.Inverse" parent="@style/TextAppearance.AppCompat.Widget.Base.ActionMode.Subtitle.Inverse" />
+
     <style name="TextAppearance.AppCompat.Widget.ActionMode.Title" parent="@style/TextAppearance.AppCompat.Widget.Base.ActionMode.Title" />
+
     <style name="TextAppearance.AppCompat.Widget.ActionMode.Title.Inverse" parent="@style/TextAppearance.AppCompat.Widget.Base.ActionMode.Title.Inverse" />
+
     <style name="TextAppearance.AppCompat.Widget.Base.ActionBar.Menu" parent="@android:style/TextAppearance.Small">
         <item name="android:textSize">12.0sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">?actionMenuTextColor</item>
     </style>
+
     <style name="TextAppearance.AppCompat.Widget.Base.ActionBar.Subtitle" parent="@android:style/TextAppearance.Small">
         <item name="android:textSize">@dimen/abc_action_bar_subtitle_text_size</item>
     </style>
+
     <style name="TextAppearance.AppCompat.Widget.Base.ActionBar.Subtitle.Inverse" parent="@android:style/TextAppearance.Small.Inverse">
         <item name="android:textSize">@dimen/abc_action_bar_subtitle_text_size</item>
     </style>
+
     <style name="TextAppearance.AppCompat.Widget.Base.ActionBar.Title" parent="@android:style/TextAppearance.Medium">
         <item name="android:textSize">@dimen/abc_action_bar_title_text_size</item>
     </style>
+
     <style name="TextAppearance.AppCompat.Widget.Base.ActionBar.Title.Inverse" parent="@android:style/TextAppearance.Medium.Inverse">
         <item name="android:textSize">@dimen/abc_action_bar_title_text_size</item>
     </style>
+
     <style name="TextAppearance.AppCompat.Widget.Base.ActionMode.Subtitle" parent="@android:style/TextAppearance.Small">
         <item name="android:textColor">?android:textColorSecondary</item>
     </style>
+
     <style name="TextAppearance.AppCompat.Widget.Base.ActionMode.Subtitle.Inverse" parent="@android:style/TextAppearance.Small.Inverse">
         <item name="android:textColor">?android:textColorSecondaryInverse</item>
     </style>
+
     <style name="TextAppearance.AppCompat.Widget.Base.ActionMode.Title" parent="@android:style/TextAppearance.Medium" />
+
     <style name="TextAppearance.AppCompat.Widget.Base.ActionMode.Title.Inverse" parent="@android:style/TextAppearance.Medium.Inverse" />
+
     <style name="TextAppearance.AppCompat.Widget.Base.DropDownItem" parent="@android:style/TextAppearance.Small">
         <item name="android:textColor">?android:textColorPrimaryDisableOnly</item>
     </style>
+
     <style name="TextAppearance.AppCompat.Widget.DropDownItem" parent="@style/TextAppearance.AppCompat.Widget.Base.DropDownItem" />
+
     <style name="TextAppearance.AppCompat.Widget.PopupMenu.Large" parent="@style/TextAppearance.AppCompat.Base.Widget.PopupMenu.Large" />
+
     <style name="TextAppearance.AppCompat.Widget.PopupMenu.Small" parent="@style/TextAppearance.AppCompat.Base.Widget.PopupMenu.Small" />
+
     <style name="TextAppearance.DeviceDefault.Light.DialogWindowTitle" parent="@android:style/TextAppearance.Holo.Light.Widget.ActionMode.Subtitle">
         <item name="android:textSize">@dimen/mz_text_size_medium</item>
         <item name="android:textStyle">normal</item>
         <item name="android:textColor">?android:textColorPrimary</item>
     </style>
+
     <style name="TextAppearance.DeviceDefault.Light.Widget.PopupMenu.Large" parent="@android:style/TextAppearance.Widget">
         <item name="android:textSize">@dimen/mz_text_size_medium</item>
         <item name="android:textColor">?android:textColorAlertDialogListItem</item>
     </style>
+
     <style name="TextAppearance.DeviceDefault.Small" parent="@android:style/TextAppearance.Small">
         <item name="android:textSize">@dimen/mz_text_size_small</item>
     </style>
+
     <style name="TextAppearance.Small.EmptyView" parent="@android:style/TextAppearance.Small">
         <item name="android:textSize">@dimen/mc_empty_tips_text_size_light</item>
         <item name="android:textColor">#4d000000</item>
     </style>
+
     <style name="TextAppearance.Small.EmptyView.Summary" parent="@style/TextAppearance.Small.EmptyView">
         <item name="android:textColor">#ff000000</item>
     </style>
+
     <style name="TextAppearance.Small.EmptyView.Title" parent="@style/TextAppearance.Small.EmptyView">
         <item name="android:textSize">18.0sp</item>
         <item name="android:textColor">#80000000</item>
     </style>
+
     <style name="TextAppearance.Widget.AppCompat.Base.ExpandedMenu.Item" parent="@android:style/TextAppearance.Medium">
         <item name="android:textColor">?android:textColorPrimaryDisableOnly</item>
     </style>
+
     <style name="TextAppearance.Widget.AppCompat.ExpandedMenu.Item" parent="@style/TextAppearance.Widget.AppCompat.Base.ExpandedMenu.Item" />
+
     <style name="Theme.AppCompat" parent="@style/Theme.Base.AppCompat">
         <item name="actionModeShareDrawable">@drawable/abc_ic_menu_share_holo_dark</item>
         <item name="activityChooserViewStyle">@style/Widget.AppCompat.ActivityChooserView</item>
@@ -134,61 +187,95 @@
         <item name="listPopupWindowStyle">@style/Widget.AppCompat.ListPopupWindow</item>
         <item name="searchDropdownBackground">@drawable/abc_search_dropdown_dark</item>
         <item name="searchResultListItemHeight">58.0dip</item>
-        <item name="searchViewAutoCompleteTextView">@style/Widget.AppCompat.AutoCompleteTextView</item>
+        <item name="searchViewAutoCompleteTextView">@style/Widget.AppCompat.AutoCompleteTextView
+        </item>
         <item name="searchViewCloseIcon">@drawable/abc_ic_clear</item>
         <item name="searchViewEditQuery">@drawable/abc_ic_commit_search_api_holo_dark</item>
         <item name="searchViewEditQueryBackground">?selectableItemBackground</item>
         <item name="searchViewGoIcon">@drawable/abc_ic_go</item>
         <item name="searchViewSearchIcon">@drawable/abc_ic_search</item>
         <item name="searchViewTextField">@drawable/abc_textfield_searchview_holo_dark</item>
-        <item name="searchViewTextFieldRight">@drawable/abc_textfield_searchview_right_holo_dark</item>
+        <item name="searchViewTextFieldRight">@drawable/abc_textfield_searchview_right_holo_dark
+        </item>
         <item name="searchViewVoiceIcon">@drawable/abc_ic_voice_search</item>
         <item name="spinnerDropDownItemStyle">@style/Widget.AppCompat.DropDownItem.Spinner</item>
-        <item name="textAppearanceLargePopupMenu">@style/TextAppearance.AppCompat.Widget.PopupMenu.Large</item>
-        <item name="textAppearanceSearchResultSubtitle">@style/TextAppearance.AppCompat.SearchResult.Subtitle</item>
-        <item name="textAppearanceSearchResultTitle">@style/TextAppearance.AppCompat.SearchResult.Title</item>
-        <item name="textAppearanceSmallPopupMenu">@style/TextAppearance.AppCompat.Widget.PopupMenu.Small</item>
+        <item name="textAppearanceLargePopupMenu">
+            @style/TextAppearance.AppCompat.Widget.PopupMenu.Large
+        </item>
+        <item name="textAppearanceSearchResultSubtitle">
+            @style/TextAppearance.AppCompat.SearchResult.Subtitle
+        </item>
+        <item name="textAppearanceSearchResultTitle">
+            @style/TextAppearance.AppCompat.SearchResult.Title
+        </item>
+        <item name="textAppearanceSmallPopupMenu">
+            @style/TextAppearance.AppCompat.Widget.PopupMenu.Small
+        </item>
         <item name="textColorSearchUrl">@color/abc_search_url_text_holo</item>
         <item name="dropdownListPreferredItemHeight">?listPreferredItemHeightSmall</item>
         <item name="popupMenuStyle">@style/Widget.AppCompat.PopupMenu</item>
     </style>
+
     <style name="Theme.AppCompat.Base.CompactMenu" parent="">
         <item name="android:listViewStyle">@style/Widget.AppCompat.ListView.Menu</item>
-        <item name="android:itemTextAppearance">@style/TextAppearance.Widget.AppCompat.ExpandedMenu.Item</item>
+        <item name="android:itemTextAppearance">
+            @style/TextAppearance.Widget.AppCompat.ExpandedMenu.Item
+        </item>
     </style>
+
     <style name="Theme.AppCompat.Base.CompactMenu.Dialog" parent="">
         <item name="android:listViewStyle">@android:style/Widget.ListView.Menu</item>
-        <item name="android:itemTextAppearance">@style/TextAppearance.AppCompat.Base.CompactMenu.Dialog</item>
+        <item name="android:itemTextAppearance">
+            @style/TextAppearance.AppCompat.Base.CompactMenu.Dialog
+        </item>
     </style>
+
     <style name="Theme.AppCompat.CompactMenu" parent="@style/Theme.AppCompat.Base.CompactMenu" />
+
     <style name="Theme.AppCompat.CompactMenu.Dialog" parent="@style/Theme.AppCompat.Base.CompactMenu.Dialog" />
+
     <style name="Theme.AppCompat.DialogWhenLarge" parent="@style/Theme.Base.AppCompat.DialogWhenLarge" />
+
     <style name="Theme.AppCompat.Light" parent="@style/Theme.Base.AppCompat.Light">
         <item name="actionModeShareDrawable">@drawable/abc_ic_menu_share_holo_light</item>
-        <item name="activityChooserViewStyle">@style/Widget.AppCompat.Light.ActivityChooserView</item>
+        <item name="activityChooserViewStyle">@style/Widget.AppCompat.Light.ActivityChooserView
+        </item>
         <item name="dropDownListViewStyle">@style/Widget.AppCompat.Light.ListView.DropDown</item>
         <item name="isLightTheme">true</item>
         <item name="listPopupWindowStyle">@style/Widget.AppCompat.Light.ListPopupWindow</item>
         <item name="searchDropdownBackground">@drawable/abc_search_dropdown_light</item>
         <item name="searchResultListItemHeight">58.0dip</item>
-        <item name="searchViewAutoCompleteTextView">@style/Widget.AppCompat.Light.AutoCompleteTextView</item>
+        <item name="searchViewAutoCompleteTextView">
+            @style/Widget.AppCompat.Light.AutoCompleteTextView
+        </item>
         <item name="searchViewCloseIcon">@drawable/abc_ic_clear_holo_light</item>
         <item name="searchViewEditQuery">@drawable/abc_ic_commit_search_api_holo_light</item>
         <item name="searchViewEditQueryBackground">?selectableItemBackground</item>
         <item name="searchViewGoIcon">@drawable/abc_ic_go_search_api_holo_light</item>
         <item name="searchViewSearchIcon">@drawable/abc_ic_search_api_holo_light</item>
         <item name="searchViewTextField">@drawable/abc_textfield_searchview_holo_light</item>
-        <item name="searchViewTextFieldRight">@drawable/abc_textfield_searchview_right_holo_light</item>
+        <item name="searchViewTextFieldRight">@drawable/abc_textfield_searchview_right_holo_light
+        </item>
         <item name="searchViewVoiceIcon">@drawable/abc_ic_voice_search_api_holo_light</item>
-        <item name="spinnerDropDownItemStyle">@style/Widget.AppCompat.Light.DropDownItem.Spinner</item>
-        <item name="textAppearanceLargePopupMenu">@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large</item>
-        <item name="textAppearanceSearchResultSubtitle">@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle</item>
-        <item name="textAppearanceSearchResultTitle">@style/TextAppearance.AppCompat.Light.SearchResult.Title</item>
-        <item name="textAppearanceSmallPopupMenu">@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small</item>
+        <item name="spinnerDropDownItemStyle">@style/Widget.AppCompat.Light.DropDownItem.Spinner
+        </item>
+        <item name="textAppearanceLargePopupMenu">
+            @style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large
+        </item>
+        <item name="textAppearanceSearchResultSubtitle">
+            @style/TextAppearance.AppCompat.Light.SearchResult.Subtitle
+        </item>
+        <item name="textAppearanceSearchResultTitle">
+            @style/TextAppearance.AppCompat.Light.SearchResult.Title
+        </item>
+        <item name="textAppearanceSmallPopupMenu">
+            @style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small
+        </item>
         <item name="textColorSearchUrl">@color/abc_search_url_text_holo</item>
         <item name="dropdownListPreferredItemHeight">?listPreferredItemHeightSmall</item>
         <item name="popupMenuStyle">@style/Widget.AppCompat.Light.PopupMenu</item>
     </style>
+
     <style name="Theme.AppCompat.Light.DarkActionBar" parent="@style/Theme.Base.AppCompat.Light.DarkActionBar">
         <item name="actionModeShareDrawable">@drawable/abc_ic_menu_share_holo_dark</item>
         <item name="activityChooserViewStyle">@style/Widget.AppCompat.ActivityChooserView</item>
@@ -197,26 +284,40 @@
         <item name="listPopupWindowStyle">@style/Widget.AppCompat.ListPopupWindow</item>
         <item name="searchDropdownBackground">@drawable/abc_search_dropdown_dark</item>
         <item name="searchResultListItemHeight">58.0dip</item>
-        <item name="searchViewAutoCompleteTextView">@style/Widget.AppCompat.AutoCompleteTextView</item>
+        <item name="searchViewAutoCompleteTextView">@style/Widget.AppCompat.AutoCompleteTextView
+        </item>
         <item name="searchViewCloseIcon">@drawable/abc_ic_clear</item>
         <item name="searchViewEditQuery">@drawable/abc_ic_commit_search_api_holo_dark</item>
         <item name="searchViewEditQueryBackground">?selectableItemBackground</item>
         <item name="searchViewGoIcon">@drawable/abc_ic_go</item>
         <item name="searchViewSearchIcon">@drawable/abc_ic_search</item>
         <item name="searchViewTextField">@drawable/abc_textfield_searchview_holo_dark</item>
-        <item name="searchViewTextFieldRight">@drawable/abc_textfield_searchview_right_holo_dark</item>
+        <item name="searchViewTextFieldRight">@drawable/abc_textfield_searchview_right_holo_dark
+        </item>
         <item name="searchViewVoiceIcon">@drawable/abc_ic_voice_search</item>
-        <item name="spinnerDropDownItemStyle">@style/Widget.AppCompat.Light.DropDownItem.Spinner</item>
-        <item name="textAppearanceLargePopupMenu">@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large</item>
-        <item name="textAppearanceSearchResultSubtitle">@style/TextAppearance.AppCompat.SearchResult.Subtitle</item>
-        <item name="textAppearanceSearchResultTitle">@style/TextAppearance.AppCompat.SearchResult.Title</item>
-        <item name="textAppearanceSmallPopupMenu">@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small</item>
+        <item name="spinnerDropDownItemStyle">@style/Widget.AppCompat.Light.DropDownItem.Spinner
+        </item>
+        <item name="textAppearanceLargePopupMenu">
+            @style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large
+        </item>
+        <item name="textAppearanceSearchResultSubtitle">
+            @style/TextAppearance.AppCompat.SearchResult.Subtitle
+        </item>
+        <item name="textAppearanceSearchResultTitle">
+            @style/TextAppearance.AppCompat.SearchResult.Title
+        </item>
+        <item name="textAppearanceSmallPopupMenu">
+            @style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small
+        </item>
         <item name="textColorSearchUrl">@color/abc_search_url_text_holo</item>
         <item name="dropdownListPreferredItemHeight">?listPreferredItemHeightSmall</item>
         <item name="popupMenuStyle">@style/Widget.AppCompat.Light.PopupMenu</item>
     </style>
+
     <style name="Theme.AppCompat.Light.DialogWhenLarge" parent="@style/Theme.Base.AppCompat.Light.DialogWhenLarge" />
+
     <style name="Theme.Base" parent="@android:style/Theme" />
+
     <style name="Theme.Base.AppCompat" parent="@style/Theme.Base">
         <item name="android:windowNoTitle">true</item>
         <item name="android:panelBackground">@drawable/abc_menu_hardkey_panel_holo_dark</item>
@@ -230,10 +331,13 @@
         <item name="actionBarTabTextStyle">@style/Widget.AppCompat.ActionBar.TabText</item>
         <item name="actionBarWidgetTheme">@null</item>
         <item name="actionButtonStyle">@style/Widget.AppCompat.ActionButton</item>
-        <item name="actionMenuTextAppearance">@style/TextAppearance.AppCompat.Widget.ActionBar.Menu</item>
+        <item name="actionMenuTextAppearance">
+            @style/TextAppearance.AppCompat.Widget.ActionBar.Menu
+        </item>
         <item name="actionMenuTextColor">?android:textColorPrimaryDisableOnly</item>
         <item name="actionModeBackground">@drawable/abc_cab_background_top_holo_dark</item>
-        <item name="actionModeCloseButtonStyle">@style/Widget.AppCompat.ActionButton.CloseMode</item>
+        <item name="actionModeCloseButtonStyle">@style/Widget.AppCompat.ActionButton.CloseMode
+        </item>
         <item name="actionModeCloseDrawable">@drawable/abc_ic_cab_done_holo_dark</item>
         <item name="actionModeSplitBackground">@drawable/abc_cab_background_bottom_holo_dark</item>
         <item name="actionModeStyle">@style/Widget.AppCompat.ActionMode</item>
@@ -257,11 +361,13 @@
         <item name="panelMenuListTheme">@style/Theme.AppCompat.CompactMenu</item>
         <item name="listChoiceBackgroundIndicator">@drawable/abc_list_selector_holo_dark</item>
     </style>
+
     <style name="Theme.Base.AppCompat.Dialog.FixedSize" parent="@android:style/Theme.Dialog">
         <item name="android:windowNoTitle">true</item>
         <item name="android:panelBackground">@drawable/abc_menu_hardkey_panel_holo_dark</item>
         <item name="actionModeBackground">@drawable/abc_cab_background_top_holo_dark</item>
-        <item name="actionModeCloseButtonStyle">@style/Widget.AppCompat.ActionButton.CloseMode</item>
+        <item name="actionModeCloseButtonStyle">@style/Widget.AppCompat.ActionButton.CloseMode
+        </item>
         <item name="actionModeCloseDrawable">@drawable/abc_ic_cab_done_holo_dark</item>
         <item name="actionModeSplitBackground">@drawable/abc_cab_background_bottom_holo_dark</item>
         <item name="actionModeStyle">@style/Widget.AppCompat.ActionMode</item>
@@ -286,8 +392,11 @@
         <item name="panelMenuListTheme">@style/Theme.AppCompat.CompactMenu</item>
         <item name="listChoiceBackgroundIndicator">@drawable/abc_list_selector_holo_dark</item>
     </style>
+
     <style name="Theme.Base.AppCompat.Dialog.Light.FixedSize" parent="@style/Theme.Base.AppCompat.Dialog.FixedSize" />
+
     <style name="Theme.Base.AppCompat.DialogWhenLarge" parent="@style/Theme.Base.AppCompat" />
+
     <style name="Theme.Base.AppCompat.Light" parent="@style/Theme.Base.Light">
         <item name="android:windowNoTitle">true</item>
         <item name="android:panelBackground">@drawable/abc_menu_hardkey_panel_holo_light</item>
@@ -301,14 +410,19 @@
         <item name="actionBarTabTextStyle">@style/Widget.AppCompat.Light.ActionBar.TabText</item>
         <item name="actionBarWidgetTheme">@null</item>
         <item name="actionButtonStyle">@style/Widget.AppCompat.Light.ActionButton</item>
-        <item name="actionMenuTextAppearance">@style/TextAppearance.AppCompat.Widget.ActionBar.Menu</item>
+        <item name="actionMenuTextAppearance">
+            @style/TextAppearance.AppCompat.Widget.ActionBar.Menu
+        </item>
         <item name="actionMenuTextColor">?android:textColorPrimaryDisableOnly</item>
         <item name="actionModeBackground">@drawable/abc_cab_background_top_holo_light</item>
-        <item name="actionModeCloseButtonStyle">@style/Widget.AppCompat.Light.ActionButton.CloseMode</item>
+        <item name="actionModeCloseButtonStyle">
+            @style/Widget.AppCompat.Light.ActionButton.CloseMode
+        </item>
         <item name="actionModeCloseDrawable">@drawable/abc_ic_cab_done_holo_light</item>
         <item name="actionModeSplitBackground">@drawable/abc_cab_background_bottom_holo_light</item>
         <item name="actionModeStyle">@style/Widget.AppCompat.ActionMode</item>
-        <item name="actionOverflowButtonStyle">@style/Widget.AppCompat.Light.ActionButton.Overflow</item>
+        <item name="actionOverflowButtonStyle">@style/Widget.AppCompat.Light.ActionButton.Overflow
+        </item>
         <item name="buttonBarButtonStyle">@android:style/Widget.Button</item>
         <item name="buttonBarStyle">@android:style/ButtonBar</item>
         <item name="dividerHorizontal">@drawable/abc_list_divider_holo_light</item>
@@ -323,23 +437,29 @@
         <item name="textAppearanceListItem">?android:textAppearanceMedium</item>
         <item name="textAppearanceListItemSmall">?android:textAppearanceMedium</item>
         <item name="windowActionBar">true</item>
-        <item name="actionDropDownStyle">@style/Widget.AppCompat.Light.Spinner.DropDown.ActionBar</item>
+        <item name="actionDropDownStyle">@style/Widget.AppCompat.Light.Spinner.DropDown.ActionBar
+        </item>
         <item name="panelMenuListWidth">@dimen/abc_panel_menu_list_width</item>
         <item name="panelMenuListTheme">@style/Theme.AppCompat.CompactMenu</item>
         <item name="listChoiceBackgroundIndicator">@drawable/abc_list_selector_holo_light</item>
     </style>
+
     <style name="Theme.Base.AppCompat.Light.DarkActionBar" parent="@style/Theme.Base.AppCompat.Light">
         <item name="android:panelBackground">@drawable/abc_menu_hardkey_panel_holo_dark</item>
         <item name="actionBarDivider">@drawable/abc_list_divider_holo_dark</item>
         <item name="actionBarItemBackground">@drawable/abc_item_background_holo_dark</item>
         <item name="actionBarStyle">@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse</item>
-        <item name="actionBarTabBarStyle">@style/Widget.AppCompat.Light.ActionBar.TabBar.Inverse</item>
-        <item name="actionBarTabStyle">@style/Widget.AppCompat.Light.ActionBar.TabView.Inverse</item>
-        <item name="actionBarTabTextStyle">@style/Widget.AppCompat.Light.ActionBar.TabText.Inverse</item>
+        <item name="actionBarTabBarStyle">@style/Widget.AppCompat.Light.ActionBar.TabBar.Inverse
+        </item>
+        <item name="actionBarTabStyle">@style/Widget.AppCompat.Light.ActionBar.TabView.Inverse
+        </item>
+        <item name="actionBarTabTextStyle">@style/Widget.AppCompat.Light.ActionBar.TabText.Inverse
+        </item>
         <item name="actionBarWidgetTheme">@style/Theme.AppCompat</item>
         <item name="actionMenuTextColor">?android:textColorPrimaryInverseDisableOnly</item>
         <item name="actionModeBackground">@drawable/abc_cab_background_top_holo_dark</item>
-        <item name="actionModeCloseButtonStyle">@style/Widget.AppCompat.ActionButton.CloseMode</item>
+        <item name="actionModeCloseButtonStyle">@style/Widget.AppCompat.ActionButton.CloseMode
+        </item>
         <item name="actionModeCloseDrawable">@drawable/abc_ic_cab_done_holo_dark</item>
         <item name="actionModeSplitBackground">@drawable/abc_cab_background_bottom_holo_dark</item>
         <item name="actionModeStyle">@style/Widget.AppCompat.Light.ActionMode.Inverse</item>
@@ -348,51 +468,91 @@
         <item name="actionDropDownStyle">@style/Widget.AppCompat.Spinner.DropDown.ActionBar</item>
         <item name="listChoiceBackgroundIndicator">@drawable/abc_list_selector_holo_dark</item>
     </style>
+
     <style name="Theme.Base.AppCompat.Light.DialogWhenLarge" parent="@style/Theme.Base.AppCompat.Light" />
+
     <style name="Theme.Base.Light" parent="@android:style/Theme.Light" />
+
     <style name="Theme.DeviceDefault.Light.Color.Coral" parent="@android:style/Theme.DeviceDefault.Light">
         <item name="android:buttonStyle">@style/Widget.DeviceDefault.Light.Button.Color.Coral</item>
-        <item name="android:checkboxStyle">@style/Widget.DeviceDefault.Light.CompoundButton.CheckBox.Color.Coral</item>
-        <item name="android:progressBarStyleHorizontal">@style/Widget.DeviceDefault.Light.ProgressBar.Horizontal.Color.Coral</item>
-        <item name="android:seekBarStyle">@style/Widget.DeviceDefault.Light.SeekBar.Color.Coral</item>
+        <item name="android:checkboxStyle">
+            @style/Widget.DeviceDefault.Light.CompoundButton.CheckBox.Color.Coral
+        </item>
+        <item name="android:progressBarStyleHorizontal">
+            @style/Widget.DeviceDefault.Light.ProgressBar.Horizontal.Color.Coral
+        </item>
+        <item name="android:seekBarStyle">@style/Widget.DeviceDefault.Light.SeekBar.Color.Coral
+        </item>
         <item name="android:textColorHighlight">@color/mz_highlighted_text_light_color_coral</item>
-        <item name="android:listChoiceIndicatorSingle">@drawable/mz_btn_check_single_color_coral</item>
-        <item name="android:listChoiceIndicatorMultiple">@drawable/mz_btn_check_multiple_color_coral</item>
-        <item name="android:textSelectHandleLeft">@drawable/mz_text_select_handle_left_color_coral</item>
-        <item name="android:textSelectHandleRight">@drawable/mz_text_select_handle_right_color_coral</item>
-        <item name="android:actionBarStyle">@style/Widget.DeviceDefault.Light.ActionBar.Color.Coral</item>
-        <item name="android:actionButtonStyle">@style/Widget.DeviceDefault.Light.ActionButton.Color.Coral</item>
-        <item name="android:actionOverflowButtonStyle">@style/Widget.DeviceDefault.Light.ActionButton.Overflow.Color.Coral</item>
-        <item name="android:textColorAlertDialogListItem">@color/mz_popup_checked_text_color_coral</item>
+        <item name="android:listChoiceIndicatorSingle">@drawable/mz_btn_check_single_color_coral
+        </item>
+        <item name="android:listChoiceIndicatorMultiple">
+            @drawable/mz_btn_check_multiple_color_coral
+        </item>
+        <item name="android:textSelectHandleLeft">@drawable/mz_text_select_handle_left_color_coral
+        </item>
+        <item name="android:textSelectHandleRight">
+            @drawable/mz_text_select_handle_right_color_coral
+        </item>
+        <item name="android:actionBarStyle">
+            @style/Widget.DeviceDefault.Light.ActionBar.Color.Coral
+        </item>
+        <item name="android:actionButtonStyle">
+            @style/Widget.DeviceDefault.Light.ActionButton.Color.Coral
+        </item>
+        <item name="android:actionOverflowButtonStyle">
+            @style/Widget.DeviceDefault.Light.ActionButton.Overflow.Color.Coral
+        </item>
+        <item name="android:textColorAlertDialogListItem">@color/mz_popup_checked_text_color_coral
+        </item>
         <item name="android:editTextBackground">@drawable/mz_edit_text_background_color_coral</item>
         <item name="android:actionMenuTextColor">@color/mz_action_menu_textcolor_coral</item>
         <item name="android:textCursorDrawable">@drawable/mz_text_cursor_light_color_coral</item>
-        <item name="MeizuCommon.VerticalSeekBarStyle">@style/Widget.MeizuCommon.SeekBar.Vertical.Color.Coral</item>
-        <item name="MeizuCommon.FoldableTextViewStyle">@style/Widget.MeizuCommon.FoldableTextView.Color.Coral</item>
-        <item name="MeizuCommon.EnhanceSeekBarStyle">@style/Widget.MeizuCommon.EnhanceSeekBar.Color.Coral</item>
+        <item name="MeizuCommon.VerticalSeekBarStyle">
+            @style/Widget.MeizuCommon.SeekBar.Vertical.Color.Coral
+        </item>
+        <item name="MeizuCommon.FoldableTextViewStyle">
+            @style/Widget.MeizuCommon.FoldableTextView.Color.Coral
+        </item>
+        <item name="MeizuCommon.EnhanceSeekBarStyle">
+            @style/Widget.MeizuCommon.EnhanceSeekBar.Color.Coral
+        </item>
         <item name="MeizuCommon.Switch">@style/Widget.MeizuCommon.Switch.Color.Coral</item>
-        <item name="MeizuCommon.SwitchPreferenceStyle">@style/Widget.MeizuCommon.SwitchPreference</item>
-        <item name="MeizuCommon.SelectionButtonStyle">@style/Widget.MeizuCommon.SeletionButton.Color.Coral</item>
-        <item name="MeizuCommon.TabScrollerStyle">@style/Widget.MeizuCommon.TabScroller.Color.Coral</item>
-        <item name="MeizuCommon.LoadingViewStyle">@style/Widget.MeizuCommon.LoadingView.Color.Coral</item>
+        <item name="MeizuCommon.SwitchPreferenceStyle">@style/Widget.MeizuCommon.SwitchPreference
+        </item>
+        <item name="MeizuCommon.SelectionButtonStyle">
+            @style/Widget.MeizuCommon.SeletionButton.Color.Coral
+        </item>
+        <item name="MeizuCommon.TabScrollerStyle">
+            @style/Widget.MeizuCommon.TabScroller.Color.Coral
+        </item>
+        <item name="MeizuCommon.LoadingViewStyle">
+            @style/Widget.MeizuCommon.LoadingView.Color.Coral
+        </item>
         <item name="mzThemeColor">@color/mz_theme_color_coral</item>
     </style>
+
     <style name="Theme.MeizuCommon" parent="@android:style/Theme.Light">
         <item name="MeizuCommon.ProgressBarStyle">@style/Widget.MeizuCommon.ProgressBar</item>
         <item name="MeizuCommon.SeekBarStyle">@style/Widget.MeizuCommon.SeekBar</item>
-        <item name="MeizuCommon.VerticalSeekBarStyle">@style/Widget.MeizuCommon.SeekBar.Vertical</item>
+        <item name="MeizuCommon.VerticalSeekBarStyle">@style/Widget.MeizuCommon.SeekBar.Vertical
+        </item>
         <item name="MeizuCommon.GalleryFlowStyle">@style/Widget.MeizuCommon.GalleryFlow</item>
         <item name="MeizuCommon.EnhanceGalleryStyle">@style/Widget.MeizuCommon.EnhanceGallery</item>
-        <item name="MeizuCommon.FoldableTextViewStyle">@style/Widget.MeizuCommon.FoldableTextView</item>
+        <item name="MeizuCommon.FoldableTextViewStyle">@style/Widget.MeizuCommon.FoldableTextView
+        </item>
         <item name="MeizuCommon.EnhanceSeekBarStyle">@style/Widget.MeizuCommon.EnhanceSeekBar</item>
         <item name="MeizuCommon.MultiWaveView">@style/Widget.MeizuCommon.MultiWaveView</item>
         <item name="MeizuCommon.Switch">@style/Widget.MeizuCommon.Switch</item>
-        <item name="MeizuCommon.SwitchPreferenceStyle">@style/Widget.MeizuCommon.SwitchPreference</item>
-        <item name="MeizuCommon.SelectionButtonStyle">@style/Widget.MeizuCommon.SeletionButton</item>
+        <item name="MeizuCommon.SwitchPreferenceStyle">@style/Widget.MeizuCommon.SwitchPreference
+        </item>
+        <item name="MeizuCommon.SelectionButtonStyle">@style/Widget.MeizuCommon.SeletionButton
+        </item>
         <item name="MeizuCommon.TabScrollerStyle">@style/Widget.MeizuCommon.TabScroller</item>
         <item name="MeizuCommon.LoadingViewStyle">@style/Widget.MeizuCommon.LoadingView</item>
         <item name="MeizuCommon.PagerIndicator">@style/Widget.MeizuCommon.PagerIndicator</item>
     </style>
+
     <style name="TranslucentActivityTheme" parent="@style/AppTheme">
         <item name="android:windowBackground">@color/quick_edit_bg</item>
         <item name="android:windowNoTitle">false</item>
@@ -401,24 +561,37 @@
         <item name="android:windowAnimationStyle">@null</item>
         <item name="android:windowSoftInputMode">stateAlwaysVisible</item>
     </style>
+
     <style name="Widget.AppCompat.ActionBar" parent="@style/Widget.AppCompat.Base.ActionBar" />
+
     <style name="Widget.AppCompat.ActionBar.Solid" parent="@style/Widget.AppCompat.Base.ActionBar.Solid" />
+
     <style name="Widget.AppCompat.ActionBar.TabBar" parent="@style/Widget.AppCompat.Base.ActionBar.TabBar" />
+
     <style name="Widget.AppCompat.ActionBar.TabText" parent="@style/Widget.AppCompat.Base.ActionBar.TabText" />
+
     <style name="Widget.AppCompat.ActionBar.TabView" parent="@style/Widget.AppCompat.Base.ActionBar.TabView" />
+
     <style name="Widget.AppCompat.ActionButton" parent="@style/Widget.AppCompat.Base.ActionButton" />
+
     <style name="Widget.AppCompat.ActionButton.CloseMode" parent="@style/Widget.AppCompat.Base.ActionButton.CloseMode" />
+
     <style name="Widget.AppCompat.ActionButton.Overflow" parent="@style/Widget.AppCompat.Base.ActionButton.Overflow" />
+
     <style name="Widget.AppCompat.ActionMode" parent="@style/Widget.AppCompat.Base.ActionMode" />
+
     <style name="Widget.AppCompat.ActivityChooserView" parent="@style/Widget.AppCompat.Base.ActivityChooserView" />
+
     <style name="Widget.AppCompat.AutoCompleteTextView" parent="@style/Widget.AppCompat.Base.AutoCompleteTextView" />
+
     <style name="Widget.AppCompat.Base.ActionBar" parent="">
         <item name="actionButtonStyle">@style/Widget.AppCompat.ActionButton</item>
         <item name="actionOverflowButtonStyle">@style/Widget.AppCompat.ActionButton.Overflow</item>
         <item name="height">?actionBarSize</item>
         <item name="displayOptions">useLogo|showHome|showTitle</item>
         <item name="titleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionBar.Title</item>
-        <item name="subtitleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle</item>
+        <item name="subtitleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle
+        </item>
         <item name="divider">?dividerVertical</item>
         <item name="background">@drawable/abc_ab_transparent_dark_holo</item>
         <item name="backgroundStacked">@drawable/abc_ab_stacked_transparent_dark_holo</item>
@@ -427,16 +600,19 @@
         <item name="progressBarStyle">@style/Widget.AppCompat.ProgressBar.Horizontal</item>
         <item name="indeterminateProgressStyle">@style/Widget.AppCompat.ProgressBar</item>
     </style>
+
     <style name="Widget.AppCompat.Base.ActionBar.Solid" parent="@style/Widget.AppCompat.Base.ActionBar">
         <item name="background">@drawable/abc_ab_solid_dark_holo</item>
         <item name="backgroundStacked">@drawable/abc_ab_stacked_solid_dark_holo</item>
         <item name="backgroundSplit">@drawable/abc_ab_bottom_solid_dark_holo</item>
     </style>
+
     <style name="Widget.AppCompat.Base.ActionBar.TabBar" parent="">
         <item name="divider">?actionBarDivider</item>
         <item name="showDividers">middle</item>
         <item name="dividerPadding">12.0dip</item>
     </style>
+
     <style name="Widget.AppCompat.Base.ActionBar.TabText" parent="">
         <item name="android:textAppearance">@null</item>
         <item name="android:textSize">12.0sp</item>
@@ -446,6 +622,7 @@
         <item name="android:maxLines">2</item>
         <item name="textAllCaps">true</item>
     </style>
+
     <style name="Widget.AppCompat.Base.ActionBar.TabView" parent="">
         <item name="android:gravity">center_horizontal</item>
         <item name="android:background">@drawable/abc_tab_indicator_ab_holo</item>
@@ -453,6 +630,7 @@
         <item name="android:paddingRight">16.0dip</item>
         <item name="android:minWidth">80.0dip</item>
     </style>
+
     <style name="Widget.AppCompat.Base.ActionButton" parent="">
         <item name="android:gravity">center</item>
         <item name="android:background">?actionBarItemBackground</item>
@@ -463,17 +641,22 @@
         <item name="android:maxLines">2</item>
         <item name="textAllCaps">@bool/abc_config_actionMenuItemAllCaps</item>
     </style>
+
     <style name="Widget.AppCompat.Base.ActionButton.CloseMode" parent="@style/Widget.AppCompat.Base.ActionButton" />
+
     <style name="Widget.AppCompat.Base.ActionButton.Overflow" parent="@style/Widget.AppCompat.Base.ActionButton">
         <item name="android:src">@drawable/abc_ic_menu_moreoverflow_normal_holo_dark</item>
     </style>
+
     <style name="Widget.AppCompat.Base.ActionMode" parent="">
         <item name="height">?actionBarSize</item>
         <item name="titleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionMode.Title</item>
-        <item name="subtitleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle</item>
+        <item name="subtitleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle
+        </item>
         <item name="background">?actionModeBackground</item>
         <item name="backgroundSplit">?actionModeSplitBackground</item>
     </style>
+
     <style name="Widget.AppCompat.Base.ActivityChooserView" parent="">
         <item name="android:gravity">center</item>
         <item name="android:background">@drawable/abc_ab_share_pack_holo_dark</item>
@@ -481,17 +664,21 @@
         <item name="showDividers">middle</item>
         <item name="dividerPadding">6.0dip</item>
     </style>
+
     <style name="Widget.AppCompat.Base.AutoCompleteTextView" parent="@android:style/Widget.AutoCompleteTextView">
         <item name="android:textColor">?actionMenuTextColor</item>
         <item name="android:dropDownSelector">@drawable/abc_list_selector_holo_dark</item>
         <item name="android:popupBackground">@drawable/abc_menu_dropdown_panel_holo_dark</item>
     </style>
+
     <style name="Widget.AppCompat.Base.DropDownItem.Spinner" parent="">
-        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Widget.DropDownItem</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Widget.DropDownItem
+        </item>
         <item name="android:gravity">center_vertical</item>
         <item name="android:paddingLeft">8.0dip</item>
         <item name="android:paddingRight">8.0dip</item>
     </style>
+
     <style name="Widget.AppCompat.Base.ListPopupWindow" parent="">
         <item name="android:dropDownSelector">@drawable/abc_list_selector_holo_dark</item>
         <item name="android:popupBackground">@drawable/abc_menu_dropdown_panel_holo_dark</item>
@@ -499,21 +686,27 @@
         <item name="android:dropDownHorizontalOffset">0.0dip</item>
         <item name="android:dropDownVerticalOffset">0.0dip</item>
     </style>
+
     <style name="Widget.AppCompat.Base.ListView.DropDown" parent="@android:style/Widget.ListView">
         <item name="android:listSelector">@drawable/abc_list_selector_holo_dark</item>
     </style>
+
     <style name="Widget.AppCompat.Base.ListView.Menu" parent="@android:style/Widget.ListView.Menu">
         <item name="android:listSelector">?listChoiceBackgroundIndicator</item>
         <item name="android:divider">?dividerHorizontal</item>
     </style>
+
     <style name="Widget.AppCompat.Base.PopupMenu" parent="@style/Widget.AppCompat.Base.ListPopupWindow" />
+
     <style name="Widget.AppCompat.Base.ProgressBar" parent="@android:style/Widget.ProgressBar">
         <item name="android:maxWidth">@dimen/abc_action_bar_progress_bar_size</item>
         <item name="android:maxHeight">@dimen/abc_action_bar_progress_bar_size</item>
         <item name="android:minWidth">@dimen/abc_action_bar_progress_bar_size</item>
         <item name="android:minHeight">@dimen/abc_action_bar_progress_bar_size</item>
     </style>
+
     <style name="Widget.AppCompat.Base.ProgressBar.Horizontal" parent="@android:style/Widget.ProgressBar.Horizontal" />
+
     <style name="Widget.AppCompat.Base.Spinner" parent="">
         <item name="android:gravity">left|center</item>
         <item name="android:background">@drawable/abc_spinner_ab_holo_dark</item>
@@ -525,68 +718,109 @@
         <item name="android:dropDownVerticalOffset">0.0dip</item>
         <item name="spinnerMode">dropdown</item>
     </style>
+
     <style name="Widget.AppCompat.DropDownItem.Spinner" parent="@style/Widget.AppCompat.Base.DropDownItem.Spinner" />
+
     <style name="Widget.AppCompat.Light.ActionBar" parent="@style/Widget.AppCompat.Light.Base.ActionBar" />
+
     <style name="Widget.AppCompat.Light.ActionBar.Solid" parent="@style/Widget.AppCompat.Light.Base.ActionBar.Solid" />
+
     <style name="Widget.AppCompat.Light.ActionBar.Solid.Inverse" parent="@style/Widget.AppCompat.Light.Base.ActionBar.Solid.Inverse" />
+
     <style name="Widget.AppCompat.Light.ActionBar.TabBar" parent="@style/Widget.AppCompat.Light.Base.ActionBar.TabBar" />
+
     <style name="Widget.AppCompat.Light.ActionBar.TabBar.Inverse" parent="@style/Widget.AppCompat.Light.Base.ActionBar.TabBar.Inverse" />
+
     <style name="Widget.AppCompat.Light.ActionBar.TabText" parent="@style/Widget.AppCompat.Light.Base.ActionBar.TabText" />
+
     <style name="Widget.AppCompat.Light.ActionBar.TabText.Inverse" parent="@style/Widget.AppCompat.Light.Base.ActionBar.TabText.Inverse" />
+
     <style name="Widget.AppCompat.Light.ActionBar.TabView" parent="@style/Widget.AppCompat.Light.Base.ActionBar.TabView" />
+
     <style name="Widget.AppCompat.Light.ActionBar.TabView.Inverse" parent="@style/Widget.AppCompat.Light.Base.ActionBar.TabView.Inverse" />
+
     <style name="Widget.AppCompat.Light.ActionButton" parent="@style/Widget.AppCompat.Light.Base.ActionButton" />
+
     <style name="Widget.AppCompat.Light.ActionButton.CloseMode" parent="@style/Widget.AppCompat.Light.Base.ActionButton.CloseMode" />
+
     <style name="Widget.AppCompat.Light.ActionButton.Overflow" parent="@style/Widget.AppCompat.Light.Base.ActionButton.Overflow" />
+
     <style name="Widget.AppCompat.Light.ActionMode.Inverse" parent="@style/Widget.AppCompat.Light.Base.ActionMode.Inverse" />
+
     <style name="Widget.AppCompat.Light.ActivityChooserView" parent="@style/Widget.AppCompat.Light.Base.ActivityChooserView" />
+
     <style name="Widget.AppCompat.Light.AutoCompleteTextView" parent="@style/Widget.AppCompat.Light.Base.AutoCompleteTextView" />
+
     <style name="Widget.AppCompat.Light.Base.ActionBar" parent="@style/Widget.AppCompat.Base.ActionBar">
         <item name="actionButtonStyle">@style/Widget.AppCompat.Light.ActionButton</item>
-        <item name="actionOverflowButtonStyle">@style/Widget.AppCompat.Light.ActionButton.Overflow</item>
+        <item name="actionOverflowButtonStyle">@style/Widget.AppCompat.Light.ActionButton.Overflow
+        </item>
         <item name="background">@drawable/abc_ab_transparent_light_holo</item>
         <item name="backgroundStacked">@drawable/abc_ab_stacked_transparent_light_holo</item>
         <item name="backgroundSplit">@drawable/abc_ab_bottom_transparent_light_holo</item>
         <item name="progressBarStyle">@style/Widget.AppCompat.ProgressBar.Horizontal</item>
         <item name="indeterminateProgressStyle">@style/Widget.AppCompat.ProgressBar</item>
     </style>
+
     <style name="Widget.AppCompat.Light.Base.ActionBar.Solid" parent="@style/Widget.AppCompat.Light.Base.ActionBar">
         <item name="background">@drawable/abc_ab_solid_light_holo</item>
         <item name="backgroundStacked">@drawable/abc_ab_stacked_solid_light_holo</item>
         <item name="backgroundSplit">@drawable/abc_ab_bottom_solid_light_holo</item>
     </style>
+
     <style name="Widget.AppCompat.Light.Base.ActionBar.Solid.Inverse" parent="@style/Widget.AppCompat.Base.ActionBar.Solid">
         <item name="actionButtonStyle">@style/Widget.AppCompat.ActionButton</item>
         <item name="actionOverflowButtonStyle">@style/Widget.AppCompat.ActionButton.Overflow</item>
-        <item name="titleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse</item>
-        <item name="subtitleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle.Inverse</item>
+        <item name="titleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse
+        </item>
+        <item name="subtitleTextStyle">
+            @style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle.Inverse
+        </item>
     </style>
+
     <style name="Widget.AppCompat.Light.Base.ActionBar.TabBar" parent="@style/Widget.AppCompat.Base.ActionBar.TabBar" />
+
     <style name="Widget.AppCompat.Light.Base.ActionBar.TabBar.Inverse" parent="@style/Widget.AppCompat.Light.Base.ActionBar.TabBar" />
+
     <style name="Widget.AppCompat.Light.Base.ActionBar.TabText" parent="@style/Widget.AppCompat.Base.ActionBar.TabText" />
+
     <style name="Widget.AppCompat.Light.Base.ActionBar.TabText.Inverse" parent="@style/Widget.AppCompat.Light.Base.ActionBar.TabText">
         <item name="android:textColor">?android:textColorPrimaryInverseDisableOnly</item>
     </style>
+
     <style name="Widget.AppCompat.Light.Base.ActionBar.TabView" parent="@style/Widget.AppCompat.Base.ActionBar.TabView" />
+
     <style name="Widget.AppCompat.Light.Base.ActionBar.TabView.Inverse" parent="@style/Widget.AppCompat.Light.Base.ActionBar.TabView" />
+
     <style name="Widget.AppCompat.Light.Base.ActionButton" parent="@style/Widget.AppCompat.Base.ActionButton" />
+
     <style name="Widget.AppCompat.Light.Base.ActionButton.CloseMode" parent="@style/Widget.AppCompat.Light.Base.ActionButton" />
+
     <style name="Widget.AppCompat.Light.Base.ActionButton.Overflow" parent="@style/Widget.AppCompat.Light.Base.ActionButton">
         <item name="android:src">@drawable/abc_ic_menu_moreoverflow_normal_holo_light</item>
     </style>
+
     <style name="Widget.AppCompat.Light.Base.ActionMode.Inverse" parent="@style/Widget.AppCompat.Base.ActionMode">
-        <item name="titleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionMode.Title.Inverse</item>
-        <item name="subtitleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle.Inverse</item>
+        <item name="titleTextStyle">
+            @style/TextAppearance.AppCompat.Widget.ActionMode.Title.Inverse
+        </item>
+        <item name="subtitleTextStyle">
+            @style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle.Inverse
+        </item>
     </style>
+
     <style name="Widget.AppCompat.Light.Base.ActivityChooserView" parent="@style/Widget.AppCompat.Base.ActivityChooserView">
         <item name="android:background">@drawable/abc_ab_share_pack_holo_light</item>
     </style>
+
     <style name="Widget.AppCompat.Light.Base.AutoCompleteTextView" parent="@android:style/Widget.AutoCompleteTextView">
         <item name="android:textColor">?actionMenuTextColor</item>
         <item name="android:dropDownSelector">@drawable/abc_list_selector_holo_light</item>
         <item name="android:popupBackground">@drawable/abc_menu_dropdown_panel_holo_light</item>
     </style>
+
     <style name="Widget.AppCompat.Light.Base.DropDownItem.Spinner" parent="@style/Widget.AppCompat.Base.DropDownItem.Spinner" />
+
     <style name="Widget.AppCompat.Light.Base.ListPopupWindow" parent="">
         <item name="android:dropDownSelector">@drawable/abc_list_selector_holo_light</item>
         <item name="android:popupBackground">@drawable/abc_menu_dropdown_panel_holo_light</item>
@@ -594,86 +828,118 @@
         <item name="android:dropDownHorizontalOffset">0.0dip</item>
         <item name="android:dropDownVerticalOffset">0.0dip</item>
     </style>
+
     <style name="Widget.AppCompat.Light.Base.ListView.DropDown" parent="@android:style/Widget.ListView">
         <item name="android:listSelector">@drawable/abc_list_selector_holo_light</item>
     </style>
+
     <style name="Widget.AppCompat.Light.Base.PopupMenu" parent="@style/Widget.AppCompat.Light.Base.ListPopupWindow" />
+
     <style name="Widget.AppCompat.Light.Base.Spinner" parent="@style/Widget.AppCompat.Base.Spinner">
         <item name="android:background">@drawable/abc_spinner_ab_holo_light</item>
         <item name="android:dropDownSelector">@drawable/abc_list_selector_holo_light</item>
         <item name="android:popupBackground">@drawable/abc_menu_dropdown_panel_holo_light</item>
     </style>
+
     <style name="Widget.AppCompat.Light.DropDownItem.Spinner" parent="@style/Widget.AppCompat.Light.Base.DropDownItem.Spinner" />
+
     <style name="Widget.AppCompat.Light.ListPopupWindow" parent="@style/Widget.AppCompat.Light.Base.ListPopupWindow" />
+
     <style name="Widget.AppCompat.Light.ListView.DropDown" parent="@style/Widget.AppCompat.Light.Base.ListView.DropDown" />
+
     <style name="Widget.AppCompat.Light.PopupMenu" parent="@style/Widget.AppCompat.Light.Base.PopupMenu" />
+
     <style name="Widget.AppCompat.Light.Spinner.DropDown.ActionBar" parent="@style/Widget.AppCompat.Light.Base.Spinner" />
+
     <style name="Widget.AppCompat.ListPopupWindow" parent="@style/Widget.AppCompat.Base.ListPopupWindow" />
+
     <style name="Widget.AppCompat.ListView.DropDown" parent="@style/Widget.AppCompat.Base.ListView.DropDown" />
+
     <style name="Widget.AppCompat.ListView.Menu" parent="@style/Widget.AppCompat.Base.ListView.Menu" />
+
     <style name="Widget.AppCompat.PopupMenu" parent="@style/Widget.AppCompat.Base.PopupMenu" />
+
     <style name="Widget.AppCompat.ProgressBar" parent="@style/Widget.AppCompat.Base.ProgressBar" />
+
     <style name="Widget.AppCompat.ProgressBar.Horizontal" parent="@style/Widget.AppCompat.Base.ProgressBar.Horizontal" />
+
     <style name="Widget.AppCompat.Spinner.DropDown.ActionBar" parent="@style/Widget.AppCompat.Base.Spinner" />
+
     <style name="Widget.DeviceDefault.CompoundButton.CheckButtonlessMultiple" parent="@android:style/Widget.Button">
         <item name="android:background">@drawable/mz_btn_check_buttonless_multiple</item>
         <item name="android:focusable">false</item>
         <item name="android:clickable">false</item>
         <item name="android:button">@null</item>
     </style>
+
     <style name="Widget.DeviceDefault.CompoundButton.CheckButtonlessMultiple.Color.Coral" parent="@android:style/Widget.Button">
-        <item name="android:background">@drawable/mz_btn_check_buttonless_multiple_color_coral</item>
+        <item name="android:background">@drawable/mz_btn_check_buttonless_multiple_color_coral
+        </item>
         <item name="android:focusable">false</item>
         <item name="android:clickable">false</item>
         <item name="android:button">@null</item>
     </style>
+
     <style name="Widget.DeviceDefault.Light.ActionBar.Color.Coral" parent="@android:style/Widget.DeviceDefault.Light.ActionBar">
-        <item name="android:progressBarStyle">@style/Widget.DeviceDefault.Light.ProgressBar.Horizontal.ActionBar.Color.Coral</item>
+        <item name="android:progressBarStyle">
+            @style/Widget.DeviceDefault.Light.ProgressBar.Horizontal.ActionBar.Color.Coral
+        </item>
         <item name="android:background">@drawable/mz_titlebar_background_bottom_color_coral</item>
         <item name="android:progressBarPadding">0.0dip</item>
         <item name="android:backgroundStacked">@drawable/mz_titlebar_background_bottom_blank</item>
         <item name="android:backgroundSplit">@drawable/mz_smartbar_background</item>
     </style>
+
     <style name="Widget.DeviceDefault.Light.ActionButton.Color.Coral" parent="@android:style/Widget.DeviceDefault.Light.ActionButton">
         <item name="android:background">@drawable/mz_ic_actionbar_highlight_color_coral</item>
         <item name="android:src">@drawable/mz_ic_sb_back</item>
     </style>
+
     <style name="Widget.DeviceDefault.Light.ActionButton.Overflow.Color.Coral" parent="@android:style/Widget.DeviceDefault.Light.ActionButton.Overflow">
         <item name="android:background">@drawable/mz_ic_actionbar_highlight_color_coral</item>
         <item name="android:src">@drawable/mz_ic_sb_more</item>
     </style>
+
     <style name="Widget.DeviceDefault.Light.Button.Color.Coral" parent="@android:style/Widget.DeviceDefault.Light.Button">
         <item name="android:background">@drawable/mz_btn_list_default_color_coral</item>
     </style>
+
     <style name="Widget.DeviceDefault.Light.Button.Meizu" parent="@android:style/Widget.DeviceDefault.Light.Button">
         <item name="android:background">@drawable/mz_btn_list_default</item>
     </style>
+
     <style name="Widget.DeviceDefault.Light.CheckedTextView.MultiChoice" parent="@android:style/Widget.DeviceDefault.Light.CheckedTextView">
         <item name="android:checkMark">?android:listChoiceIndicatorMultiple</item>
     </style>
+
     <style name="Widget.DeviceDefault.Light.CheckedTextView.SingleChoice" parent="@android:style/Widget.DeviceDefault.Light.CheckedTextView">
         <item name="android:checkMark">?android:listChoiceIndicatorSingle</item>
     </style>
+
     <style name="Widget.DeviceDefault.Light.CompoundButton.CheckBox.Color.Coral" parent="@android:style/Widget.DeviceDefault.Light.CompoundButton.CheckBox">
         <item name="android:button">@drawable/mz_btn_check_multiple_color_coral</item>
     </style>
+
     <style name="Widget.DeviceDefault.Light.EditText.Dialog" parent="@android:style/Widget.DeviceDefault.Light.EditText">
         <item name="android:textSize">@dimen/mz_alert_dialog_edittext_text_size</item>
         <item name="android:textColor">@color/mz_alert_dialog_edittext_text_color</item>
         <item name="android:gravity">bottom</item>
         <item name="android:paddingLeft">@dimen/mz_alert_dialog_edittext_inner_padding_left</item>
-        <item name="android:paddingBottom">@dimen/mz_alert_dialog_edittext_inner_padding_bottom</item>
+        <item name="android:paddingBottom">@dimen/mz_alert_dialog_edittext_inner_padding_bottom
+        </item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:minHeight">@dimen/mz_alert_dialog_edittext_height</item>
         <item name="android:singleLine">false</item>
         <item name="android:lineSpacingExtra">@dimen/mz_alert_dialog_edittext_line_spacing</item>
     </style>
+
     <style name="Widget.DeviceDefault.Light.ListView.Meizu" parent="@android:style/Widget.DeviceDefault.Light.ListView">
         <item name="android:scrollbarStyle">outsideOverlay</item>
         <item name="android:paddingLeft">@dimen/mz_list_item_padding_left</item>
         <item name="android:paddingRight">@dimen/mz_list_item_padding_right</item>
     </style>
+
     <style name="Widget.DeviceDefault.Light.ListView.Meizu.Partition" parent="@android:style/Widget.DeviceDefault.Light.ListView">
         <item name="android:scrollbarStyle">outsideOverlay</item>
         <item name="android:paddingLeft">@dimen/mz_card_list_item_padding_left</item>
@@ -685,6 +951,7 @@
         <item name="mzPartitionStyle">true</item>
         <item name="mzDividerInside">true</item>
     </style>
+
     <style name="Widget.DeviceDefault.Light.MzPickerLayout" parent="@android:style/Widget.Holo.Light">
         <item name="android:background">@drawable/mz_dialog_card_bg_light</item>
         <item name="android:layout_width">@dimen/mz_picker_width</item>
@@ -694,51 +961,72 @@
         <item name="android:layout_marginRight">@dimen/mz_picker_layout_margin_right</item>
         <item name="android:layout_marginBottom">@dimen/mz_picker_layout_margin_bottom</item>
     </style>
+
     <style name="Widget.DeviceDefault.Light.ProgressBar.Horizontal.ActionBar.Color.Coral" parent="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal">
-        <item name="android:progressDrawable">@drawable/mz_actionbar_progress_horizontal_color_coral</item>
+        <item name="android:progressDrawable">
+            @drawable/mz_actionbar_progress_horizontal_color_coral
+        </item>
     </style>
+
     <style name="Widget.DeviceDefault.Light.ProgressBar.Horizontal.Color.Coral" parent="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal">
         <item name="android:progressDrawable">@drawable/mz_progress_horizontal_color_coral</item>
     </style>
+
     <style name="Widget.DeviceDefault.Light.SeekBar.Color.Coral" parent="@android:style/Widget.DeviceDefault.Light.SeekBar">
-        <item name="android:indeterminateDrawable">@drawable/mz_scrubber_progress_horizontal_color_coral</item>
-        <item name="android:progressDrawable">@drawable/mz_scrubber_progress_horizontal_color_coral</item>
+        <item name="android:indeterminateDrawable">
+            @drawable/mz_scrubber_progress_horizontal_color_coral
+        </item>
+        <item name="android:progressDrawable">
+            @drawable/mz_scrubber_progress_horizontal_color_coral
+        </item>
         <item name="android:thumb">@drawable/mz_scrubber_control_selector_color_coral</item>
     </style>
+
     <style name="Widget.DeviceDefault.Light.SeekBar.White" parent="@android:style/Widget.DeviceDefault.Light.SeekBar">
-        <item name="android:indeterminateDrawable">@drawable/mz_scrubber_progress_horizontal_white</item>
+        <item name="android:indeterminateDrawable">@drawable/mz_scrubber_progress_horizontal_white
+        </item>
         <item name="android:progressDrawable">@drawable/mz_scrubber_progress_horizontal_white</item>
         <item name="android:thumb">@drawable/mz_scrubber_control_selector_white</item>
     </style>
+
     <style name="Widget.MeizuCommon" parent="@android:style/Widget.DeviceDefault" />
+
     <style name="Widget.MeizuCommon.EnhanceGallery" parent="@style/Widget.MeizuCommon">
         <item name="mcSpacing">10.0dip</item>
         <item name="mcScrollEnableWhenLessContent">false</item>
         <item name="mcMaxOverScrollDistance">@dimen/mc_enhancegallery_max_overscroll_distance</item>
     </style>
+
     <style name="Widget.MeizuCommon.EnhanceSeekBar" parent="@style/Widget.MeizuCommon">
         <item name="mcEItemsCount">0</item>
     </style>
+
     <style name="Widget.MeizuCommon.EnhanceSeekBar.Color.Coral" parent="@style/Widget.MeizuCommon.EnhanceSeekBar">
         <item name="mcEThumb">@drawable/mz_scrubber_control_selector_color_coral</item>
     </style>
+
     <style name="Widget.MeizuCommon.FoldableTextView" parent="@android:style/Widget.TextView">
         <item name="mzUnfoldAlignViewEdge">false</item>
         <item name="mzClickToFold">true</item>
         <item name="mzIsFold">true</item>
     </style>
+
     <style name="Widget.MeizuCommon.FoldableTextView.Color.Coral" parent="@style/Widget.MeizuCommon.FoldableTextView">
         <item name="mzLinkColor">@color/mz_theme_color_coral</item>
     </style>
+
     <style name="Widget.MeizuCommon.GalleryFlow" parent="@style/Widget.MeizuCommon">
         <item name="mcCirculate">false</item>
         <item name="mcPicSize">@dimen/mc_galleryflow_picture_size</item>
     </style>
+
     <style name="Widget.MeizuCommon.LoadingView" parent="@style/Widget.MeizuCommon">
         <item name="mcLoadingRadius">@dimen/mcLoadingRadius</item>
         <item name="mcRingWidth">@dimen/mcRingWidth</item>
     </style>
+
     <style name="Widget.MeizuCommon.LoadingView.Color.Coral" parent="@style/Widget.MeizuCommon.LoadingView" />
+
     <style name="Widget.MeizuCommon.McPickerLayout" parent="@style/Widget.MeizuCommon">
         <item name="android:layout_gravity">center</item>
         <item name="android:layout_width">@dimen/mc_picker_width</item>
@@ -748,10 +1036,14 @@
         <item name="android:layout_marginRight">@dimen/mc_picker_layout_margin_right</item>
         <item name="android:layout_marginBottom">@dimen/mc_picker_layout_margin_bottom</item>
     </style>
+
     <style name="Widget.MeizuCommon.MultiWaveView" parent="@style/Widget.MeizuCommon">
         <item name="mcTargetDrawables">@array/mc_incoming_call_widget_2way_targets</item>
-        <item name="mcTargetDescriptions">@array/mc_incoming_call_widget_2way_target_descriptions</item>
-        <item name="mcDirectionDescriptions">@array/mc_incoming_call_widget_2way_direction_descriptions</item>
+        <item name="mcTargetDescriptions">@array/mc_incoming_call_widget_2way_target_descriptions
+        </item>
+        <item name="mcDirectionDescriptions">
+            @array/mc_incoming_call_widget_2way_direction_descriptions
+        </item>
         <item name="mcHandleDrawable">@drawable/mc_ic_incoming_ringing_touch_handle</item>
         <item name="mcWaveDrawable">@drawable/mc_ic_incoming_ringing_outerring</item>
         <item name="mcOuterRadius">@dimen/mc_multiwaveview_target_placement_radius</item>
@@ -760,15 +1052,21 @@
         <item name="mcTargetMinRadius">@dimen/mc_multiwaveview_target_min_radius</item>
         <item name="mcMaxPointCircleRadius">@dimen/mc_multiwaveview_point_circle_radius</item>
         <item name="mcMaxPointRadius">@dimen/mc_multiwaveview_point_radius</item>
-        <item name="mcOuterRadiusHeight">@dimen/mc_multiwaveview_target_placement_radius_height</item>
-        <item name="mcTargetToHandle">@dimen/mc_multiwaveview_distance_between_target_and_handle</item>
+        <item name="mcOuterRadiusHeight">@dimen/mc_multiwaveview_target_placement_radius_height
+        </item>
+        <item name="mcTargetToHandle">@dimen/mc_multiwaveview_distance_between_target_and_handle
+        </item>
         <item name="mcTargetSnapRadius">@dimen/mc_multiwaveview_target_snap_radius</item>
         <item name="mcPointColor">@color/mc_multiwaveview_point_color</item>
     </style>
+
     <style name="Widget.MeizuCommon.MultiWaveView.Small" parent="@style/Widget.MeizuCommon.MultiWaveView">
         <item name="mcTargetDrawables">@array/mc_incoming_call_widget_2way_targets_small</item>
-        <item name="mcTargetDescriptions">@array/mc_incoming_call_widget_2way_target_descriptions</item>
-        <item name="mcDirectionDescriptions">@array/mc_incoming_call_widget_2way_direction_descriptions</item>
+        <item name="mcTargetDescriptions">@array/mc_incoming_call_widget_2way_target_descriptions
+        </item>
+        <item name="mcDirectionDescriptions">
+            @array/mc_incoming_call_widget_2way_direction_descriptions
+        </item>
         <item name="mcHandleDrawable">@drawable/mc_ic_incoming_ringing_touch_handle_small</item>
         <item name="mcWaveDrawable">@drawable/mc_ic_incoming_ringing_outerring_small</item>
         <item name="mcOuterRadius">@dimen/mc_multiwaveview_target_placement_radius_small</item>
@@ -777,11 +1075,16 @@
         <item name="mcTargetMinRadius">@dimen/mc_multiwaveview_target_min_radius_small</item>
         <item name="mcMaxPointCircleRadius">@dimen/mc_multiwaveview_point_circle_radius_small</item>
         <item name="mcMaxPointRadius">@dimen/mc_multiwaveview_point_radius_small</item>
-        <item name="mcOuterRadiusHeight">@dimen/mc_multiwaveview_target_placement_radius_height_small</item>
-        <item name="mcTargetToHandle">@dimen/mc_multiwaveview_distance_between_target_and_handle_small</item>
+        <item name="mcOuterRadiusHeight">
+            @dimen/mc_multiwaveview_target_placement_radius_height_small
+        </item>
+        <item name="mcTargetToHandle">
+            @dimen/mc_multiwaveview_distance_between_target_and_handle_small
+        </item>
         <item name="mcTargetSnapRadius">@dimen/mc_multiwaveview_target_snap_radius_small</item>
         <item name="mcPointColor">@color/mc_multiwaveview_point_color_small</item>
     </style>
+
     <style name="Widget.MeizuCommon.PagerIndicator" parent="@style/Widget.MeizuCommon">
         <item name="android:paddingBottom">8.0dip</item>
         <item name="mcRadius">@dimen/mc_pager_indicator_radius</item>
@@ -790,6 +1093,7 @@
         <item name="mcFillColor">@color/mc_pager_indicator_fill_color</item>
         <item name="mcHighlightColor">@color/mc_pager_indicator_highlight_color</item>
     </style>
+
     <style name="Widget.MeizuCommon.ProgressBar" parent="@android:style/Widget.DeviceDefault.ProgressBar">
         <item name="android:paddingLeft">0.0dip</item>
         <item name="android:paddingTop">14.0dip</item>
@@ -803,11 +1107,13 @@
         <item name="mcMinHeight">48.0dip</item>
         <item name="mcMaxHeight">48.0dip</item>
     </style>
+
     <style name="Widget.MeizuCommon.RoundCornerRecordView" parent="@style/Widget.MeizuCommon">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="mcBorderType">border_smallContact</item>
     </style>
+
     <style name="Widget.MeizuCommon.SeekBar" parent="@android:style/Widget.DeviceDefault.Light.SeekBar">
         <item name="android:paddingLeft">16.0dip</item>
         <item name="android:paddingRight">16.0dip</item>
@@ -820,6 +1126,7 @@
         <item name="mcThumb">@drawable/mz_scrubber_control_selector</item>
         <item name="mcThumbOffset">16.0dip</item>
     </style>
+
     <style name="Widget.MeizuCommon.SeekBar.Vertical" parent="@style/Widget.MeizuCommon.SeekBar">
         <item name="android:paddingLeft">0.0dip</item>
         <item name="android:paddingTop">@dimen/mc_seekbar_vertical_padding_top</item>
@@ -833,19 +1140,25 @@
         <item name="mcThumb">@drawable/mz_scrubber_control_selector</item>
         <item name="mcThumbOffset">@dimen/mc_seekbar_vertical_thumb_offset</item>
     </style>
+
     <style name="Widget.MeizuCommon.SeekBar.Vertical.Color.Coral" parent="@style/Widget.MeizuCommon.SeekBar.Vertical">
-        <item name="mcProgressDrawable">@drawable/mz_scrubber_progress_vertical_light_color_coral</item>
+        <item name="mcProgressDrawable">@drawable/mz_scrubber_progress_vertical_light_color_coral
+        </item>
         <item name="mcThumb">@drawable/mz_scrubber_control_selector_color_coral</item>
     </style>
+
     <style name="Widget.MeizuCommon.SeekBar.Vertical.Dark" parent="@style/Widget.MeizuCommon.SeekBar.Vertical">
         <item name="mcThumb">@drawable/mz_scrubber_control_selector_dark</item>
     </style>
+
     <style name="Widget.MeizuCommon.SeletionButton" parent="@style/Widget.MeizuCommon">
         <item name="mcBackground">@drawable/mc_selection_button_background</item>
     </style>
+
     <style name="Widget.MeizuCommon.SeletionButton.Color.Coral" parent="@style/Widget.MeizuCommon.SeletionButton">
         <item name="mcBackground">@drawable/mz_selection_button_background_color_coral</item>
     </style>
+
     <style name="Widget.MeizuCommon.Switch" parent="@style/Widget.MeizuCommon">
         <item name="mcThumb">@drawable/mz_switch_anim_inner</item>
         <item name="mcTrack">@drawable/mz_switch_anim_track</item>
@@ -854,20 +1167,25 @@
         <item name="mcSwitchMinWidth">96.0dip</item>
         <item name="mcSwitchPadding">16.0dip</item>
     </style>
+
     <style name="Widget.MeizuCommon.Switch.Color.Coral" parent="@style/Widget.MeizuCommon.Switch">
         <item name="mcThumb">@drawable/mz_switch_anim_inner_color_coral</item>
         <item name="mcThumbOn">@drawable/mz_switch_anim_thumb_on_selector_color_coral</item>
     </style>
+
     <style name="Widget.MeizuCommon.SwitchPreference" parent="@style/Widget.MeizuCommon">
         <item name="android:layout">@layout/mc_preference</item>
         <item name="android:widgetLayout">@layout/mc_preference_widget_switch</item>
     </style>
+
     <style name="Widget.MeizuCommon.TabScroller" parent="@style/Widget.MeizuCommon">
         <item name="mcTabIndicatorDrawable">@drawable/mz_tab_selected</item>
     </style>
+
     <style name="Widget.MeizuCommon.TabScroller.Color.Coral" parent="@style/Widget.MeizuCommon.TabScroller">
         <item name="mcTabIndicatorDrawable">@drawable/mz_tab_selected_color_coral</item>
     </style>
+
     <style name="Widget.MeizuCommon.WindowsTransparent" parent="@android:style/Theme.DeviceDefault.Light">
         <item name="android:windowBackground">@color/mz_translucent</item>
         <item name="android:windowIsTranslucent">true</item>
@@ -876,6 +1194,7 @@
         <item name="android:paddingRight">0.0dip</item>
         <item name="android:paddingBottom">0.0dip</item>
     </style>
+
     <style name="Widget.StaggeredGridView" parent="@android:style/Theme.DeviceDefault.Light">
         <item name="android:scrollbarStyle">outsideOverlay</item>
         <item name="android:scrollbars">vertical</item>

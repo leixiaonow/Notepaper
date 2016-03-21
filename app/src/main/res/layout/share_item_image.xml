@@ -1,3 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.meizu.flyme.notepaper.widget.ScaleImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:scaleType="centerCrop" android:maxHeight="@dimen/edit_image_max_height"
-  xmlns:android="http://schemas.android.com/apk/res/android" />
+<com.meizu.flyme.notepaper.widget.ScaleImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/image"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8.0dip"
+    android:maxHeight="@dimen/edit_image_max_height"
+    android:scaleType="centerCrop" />

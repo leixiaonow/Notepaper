@@ -1,3 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<appwidget-provider android:minWidth="284.0dip" android:minHeight="50.0dip" android:updatePeriodMillis="0" android:initialLayout="@layout/notes_appwidget_small" android:previewImage="@drawable/thumbnail_note_widget_small" android:resizeMode="none" android:widgetCategory="home_screen|keyguard"
-  xmlns:android="http://schemas.android.com/apk/res/android" />
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:initialLayout="@layout/notes_appwidget_small"
+    android:minHeight="50.0dip"
+    android:minWidth="284.0dip"
+    android:previewImage="@drawable/thumbnail_note_widget_small"
+    android:resizeMode="none"
+    android:updatePeriodMillis="0"
+    android:widgetCategory="home_screen|keyguard" />

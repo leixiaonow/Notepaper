@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_window_focused="false" android:state_enabled="true" android:state_checked="true" android:drawable="@drawable/mz_btn_check_button_square_on_color_coral" />
-    <item android:state_window_focused="false" android:state_enabled="true" android:state_checked="false" android:drawable="@drawable/mz_btn_check_button_square_off" />
-    <item android:state_enabled="true" android:state_checked="true" android:state_pressed="true" android:drawable="@drawable/mz_btn_check_button_square_on_color_coral" />
-    <item android:state_enabled="true" android:state_checked="false" android:state_pressed="true" android:drawable="@drawable/mz_btn_check_button_square_off" />
-    <item android:state_focused="true" android:state_enabled="true" android:state_checked="true" android:drawable="@drawable/mz_btn_check_button_square_on_color_coral" />
-    <item android:state_focused="true" android:state_enabled="true" android:state_checked="false" android:drawable="@drawable/mz_btn_check_button_square_off" />
-    <item android:state_enabled="true" android:state_checked="false" android:drawable="@drawable/mz_btn_check_button_square_off" />
-    <item android:state_enabled="true" android:state_checked="true" android:drawable="@drawable/mz_btn_check_button_square_on_color_coral" />
-    <item android:state_window_focused="false" android:state_checked="true" android:drawable="@drawable/mz_btn_check_button_square_on_disable_color_coral" />
-    <item android:state_window_focused="false" android:state_checked="false" android:drawable="@drawable/mz_btn_check_button_square_off_disable" />
-    <item android:state_focused="true" android:state_checked="true" android:drawable="@drawable/mz_btn_check_button_square_on_disable_color_coral" />
-    <item android:state_focused="true" android:state_checked="false" android:drawable="@drawable/mz_btn_check_button_square_off_disable" />
-    <item android:state_checked="false" android:drawable="@drawable/mz_btn_check_button_square_off_disable" />
-    <item android:state_checked="true" android:drawable="@drawable/mz_btn_check_button_square_on_disable_color_coral" />
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/mz_btn_check_button_square_on_color_coral" android:state_checked="true" android:state_enabled="true" android:state_window_focused="false" />
+    <item android:drawable="@drawable/mz_btn_check_button_square_off" android:state_checked="false" android:state_enabled="true" android:state_window_focused="false" />
+    <item android:drawable="@drawable/mz_btn_check_button_square_on_color_coral" android:state_checked="true" android:state_enabled="true" android:state_pressed="true" />
+    <item android:drawable="@drawable/mz_btn_check_button_square_off" android:state_checked="false" android:state_enabled="true" android:state_pressed="true" />
+    <item android:drawable="@drawable/mz_btn_check_button_square_on_color_coral" android:state_checked="true" android:state_enabled="true" android:state_focused="true" />
+    <item android:drawable="@drawable/mz_btn_check_button_square_off" android:state_checked="false" android:state_enabled="true" android:state_focused="true" />
+    <item android:drawable="@drawable/mz_btn_check_button_square_off" android:state_checked="false" android:state_enabled="true" />
+    <item android:drawable="@drawable/mz_btn_check_button_square_on_color_coral" android:state_checked="true" android:state_enabled="true" />
+    <item android:drawable="@drawable/mz_btn_check_button_square_on_disable_color_coral" android:state_checked="true" android:state_window_focused="false" />
+    <item android:drawable="@drawable/mz_btn_check_button_square_off_disable" android:state_checked="false" android:state_window_focused="false" />
+    <item android:drawable="@drawable/mz_btn_check_button_square_on_disable_color_coral" android:state_checked="true" android:state_focused="true" />
+    <item android:drawable="@drawable/mz_btn_check_button_square_off_disable" android:state_checked="false" android:state_focused="true" />
+    <item android:drawable="@drawable/mz_btn_check_button_square_off_disable" android:state_checked="false" />
+    <item android:drawable="@drawable/mz_btn_check_button_square_on_disable_color_coral" android:state_checked="true" />
 </selector>

@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merge
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/mz_selection_button_text_size" android:textStyle="bold" android:textColor="@color/mz_selection_button_text_color" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@android:id/text1" android:background="@drawable/mz_selection_button_background" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@android:id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/mz_selection_button_background"
+        android:clickable="false"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:singleLine="true"
+        android:textColor="@color/mz_selection_button_text_color"
+        android:textSize="@dimen/mz_selection_button_text_size"
+        android:textStyle="bold" />
 </merge>

@@ -1,3 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.meizu.common.widget.BlurRectView android:layout_gravity="top" android:id="@id/topBlur" android:layout_width="fill_parent" android:layout_height="@dimen/system_bar_top_height"
-  xmlns:android="http://schemas.android.com/apk/res/android" />
+<com.meizu.common.widget.BlurRectView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/topBlur"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/system_bar_top_height"
+    android:layout_gravity="top" />

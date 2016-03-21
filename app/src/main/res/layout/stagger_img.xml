@@ -1,13 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:background="@drawable/background_list_item" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.meizu.flyme.notepaper.widget.StaggerImageView android:layout_gravity="center" android:id="@id/picture" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:maxHeight="@dimen/stagger_image_max_height" android:minHeight="52.0dip" />
-    <ImageView android:background="@drawable/bg_photo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <RelativeLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:background="@drawable/bg_photo" android:layout_width="fill_parent" android:layout_height="42.0dip">
-        <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/stagger_record_left_margin" android:layout_alignParentLeft="true">
-            <ImageView android:id="@id/top" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/stagger_top_right_margin" android:src="@drawable/ic_top_small_white" />
-            <ImageView android:id="@id/record" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_record_small_white" />
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_list_item">
+
+    <com.meizu.flyme.notepaper.widget.StaggerImageView
+        android:id="@id/picture"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="false"
+        android:maxHeight="@dimen/stagger_image_max_height"
+        android:minHeight="52.0dip"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bg_photo"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="42.0dip"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bg_photo"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/stagger_record_left_margin"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@id/top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/stagger_top_right_margin"
+                android:src="@drawable/ic_top_small_white"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@id/record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_record_small_white"
+                android:visibility="gone" />
         </LinearLayout>
-        <TextView android:textSize="@dimen/stagger_time_font_size" android:textColor="#ffffffff" android:id="@id/time" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/stagger_time_right_margin" android:maxLines="1" android:lines="1" android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/stagger_time_right_margin"
+            android:clickable="false"
+            android:focusable="false"
+            android:lines="1"
+            android:maxLines="1"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/stagger_time_font_size" />
     </RelativeLayout>
 </FrameLayout>

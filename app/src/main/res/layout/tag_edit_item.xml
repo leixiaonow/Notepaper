@@ -1,10 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?android:activatedBackgroundIndicator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeightSmall">
-        <ImageView android:id="@id/drag" android:paddingRight="@dimen/tag_item_drag_padding_right" android:focusable="false" android:layout_width="@dimen/tag_item_edit_margin" android:layout_height="fill_parent" android:src="@drawable/ic_sequence" android:scaleType="centerInside" />
-        <com.meizu.flyme.notepaper.widget.TagEditText android:textSize="@dimen/tag_list_text_size" android:textColor="@color/tag_text_color" android:ellipsize="middle" android:layout_gravity="center_vertical" android:id="@id/title" android:background="@drawable/tag_edit_background" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:layout_weight="1.0" />
-        <ImageView android:layout_gravity="right|center" android:id="@id/delete" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:focusable="false" android:visibility="invisible" android:layout_width="@dimen/tag_item_edit_delete_width" android:layout_height="fill_parent" android:src="@drawable/mz_ic_delete" android:scaleType="center" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:activatedBackgroundIndicator"
+        android:gravity="center_vertical"
+        android:minHeight="?android:listPreferredItemHeightSmall"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@id/drag"
+            android:layout_width="@dimen/tag_item_edit_margin"
+            android:layout_height="fill_parent"
+            android:focusable="false"
+            android:paddingRight="@dimen/tag_item_drag_padding_right"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_sequence" />
+
+        <com.meizu.flyme.notepaper.widget.TagEditText
+            android:id="@id/title"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+            android:background="@drawable/tag_edit_background"
+            android:ellipsize="middle"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/tag_text_color"
+            android:textSize="@dimen/tag_list_text_size" />
+
+        <ImageView
+            android:id="@id/delete"
+            android:layout_width="@dimen/tag_item_edit_delete_width"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|center"
+            android:focusable="false"
+            android:paddingLeft="0.0dip"
+            android:paddingRight="0.0dip"
+            android:scaleType="center"
+            android:src="@drawable/mz_ic_delete"
+            android:visibility="invisible" />
     </LinearLayout>
-    <ImageView android:background="@drawable/mz_drawer_list_divider_light" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mz_drawer_list_divider_light" />
 </LinearLayout>

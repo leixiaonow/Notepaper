@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_selected="true" android:drawable="@drawable/edit_record_select" />
-    <item android:state_selected="false" android:drawable="@drawable/edit_record_unselect" />
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/edit_record_select" android:state_selected="true" />
+    <item android:drawable="@drawable/edit_record_unselect" android:state_selected="false" />
 </selector>

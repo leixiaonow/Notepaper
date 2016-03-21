@@ -16,33 +16,34 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.database.sqlite.SQLiteQueryBuilder;
 import android.net.Uri;
 import android.os.ParcelFileDescriptor;
+import android.support.v4.view.accessibility.AccessibilityNodeInfoCompat;
 import android.support.v7.appcompat.BuildConfig;
 import android.text.TextUtils;
 import android.util.Log;
-
-import com.meizu.Constants;
+import com.android.common.content.SyncStateContentProviderHelper;
+import com.meizu.flyme.notepaper.NoteApplication;
+import com.meizu.flyme.notepaper.TagData;
 import com.meizu.flyme.notepaper.database.NotePaper.AccountConstract;
 import com.meizu.flyme.notepaper.database.NotePaper.NoteCategory;
 import com.meizu.flyme.notepaper.database.NotePaper.NoteFiles;
 import com.meizu.flyme.notepaper.database.NotePaper.Notes;
-import com.meizu.flyme.notepaper.notepaper.R;
+import com.meizu.flyme.notepaper.upgrade.NoteUpgradeUtils;
 import com.meizu.flyme.notepaper.utils.NoteUtil;
-
-import org.json.JSONArray;
-import org.json.JSONObject;
-
+import com.meizu.notepaper.R;
+import com.meizu.pim.HanziToPinyin.Token;
+import com.meizu.update.Constants;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Locale;
 import java.util.UUID;
-
-//  import com.meizu.flyme.notepaper.NoteApplication;
-//  import com.meizu.flyme.notepaper.TagData;
-//  import com.meizu.flyme.notepaper.upgrade.NoteUpgradeUtils;
-//  import com.meizu.pim.HanziToPinyin.Token;
-//  import com.meizu.update.Constants;
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 public class NotePaperProvider extends ContentProvider {
     private static final int ACCOUNTS = 15;
@@ -79,6 +80,8 @@ public class NotePaperProvider extends ContentProvider {
 
     public static class DatabaseHelper extends SQLiteOpenHelper {
         private final Context mContext;
+        private final SyncStateContentProviderHelper mSyncState = new SyncStateContentProviderHelper();
+
         public DatabaseHelper(Context context) {
             super(context, NotePaperProvider.DATABASE_NAME, null, NotePaperProvider.FILE_ID);
             this.mContext = context;
@@ -100,6 +103,7 @@ public class NotePaperProvider extends ContentProvider {
         }
 
         public void onCreate(SQLiteDatabase db) {
+            this.mSyncState.createDatabase(db);
             Log.d(NotePaperProvider.TAG, "onCreate:notes");
             db.execSQL("CREATE TABLE notes (_id INTEGER PRIMARY KEY AUTOINCREMENT,uuid TEXT,note TEXT,create_time INTEGER,modified INTEGER,paper INTEGER,title TEXT,note_with_style TEXT DEFAULT NULL," + Notes.FONT_COLOR + " INTEGER," + Notes.FONT_SIZE + " INTEGER," + Notes.FIRST_IMAGE + " TEXT," + Notes.FIRST_RECORD + " TEXT," + Notes.FILE_LIST + " TEXT," + Notes.DIRTY + " INTEGER," + Notes.ENCRYPT + " INTEGER DEFAULT 0," + Notes.TOP + " INTEGER DEFAULT 0," + Notes.TAG + " INTEGER DEFAULT 0," + Notes.DESKTOP + " INTEGER DEFAULT 0," + Notes.ACCOUNT_ID + " INTEGER DEFAULT 0," + Notes.SYNC_ID + " TEXT," + Notes.RESERVED1 + " TEXT," + Notes.RESERVED2 + " TEXT," + Notes.SYNC_DATA1 + " TEXT," + Notes.SYNC_DATA2 + " TEXT," + Notes.SYNC_DATA3 + " TEXT," + Notes.SYNC_DATA4 + " TEXT" + ");");
             createFilesTable(db);
@@ -233,108 +237,272 @@ public class NotePaperProvider extends ContentProvider {
             }
         }
 
-        //删除了里面的代码
         private boolean copydb(int rawFile, String uuid, String name) {
-            return false;
+            Exception e;
+            Throwable th;
+            InputStream is = null;
+            FileOutputStream fileOutputStream = null;
+            try {
+                is = this.mContext.getResources().openRawResource(rawFile);
+                File pDataDir = new File(NoteUtil.FILES_ANDROID_DATA);
+                if (pDataDir == null || !pDataDir.exists()) {
+                    Log.d(NotePaperProvider.TAG, "Android data dir not exist.");
+                    if (is != null) {
+                        try {
+                            is.close();
+                        } catch (IOException e2) {
+                        }
+                    }
+                    if (fileOutputStream == null) {
+                        return false;
+                    }
+                    try {
+                        fileOutputStream.close();
+                        return false;
+                    } catch (IOException e3) {
+                        return false;
+                    }
+                }
+                File sdcardFile = NoteUtil.getFile(uuid, name);
+                if (sdcardFile.getParentFile().exists() || sdcardFile.getParentFile().mkdirs()) {
+                    FileOutputStream fos = new FileOutputStream(sdcardFile);
+                    try {
+                        byte[] buffer = new byte[AccessibilityNodeInfoCompat.ACTION_NEXT_HTML_ELEMENT];
+                        while (true) {
+                            int count = is.read(buffer);
+                            if (count <= 0) {
+                                break;
+                            }
+                            fos.write(buffer, NotePaperProvider.FILE_COLUMN_ID, count);
+                        }
+                        if (is != null) {
+                            try {
+                                is.close();
+                            } catch (IOException e4) {
+                            }
+                        }
+                        if (fos != null) {
+                            try {
+                                fos.close();
+                            } catch (IOException e5) {
+                            }
+                        }
+                        fileOutputStream = fos;
+                        return true;
+                    } catch (Exception e6) {
+                        e = e6;
+                        fileOutputStream = fos;
+                        try {
+                            e.printStackTrace();
+                            if (is != null) {
+                                try {
+                                    is.close();
+                                } catch (IOException e7) {
+                                }
+                            }
+                            if (fileOutputStream != null) {
+                                return false;
+                            }
+                            try {
+                                fileOutputStream.close();
+                                return false;
+                            } catch (IOException e8) {
+                                return false;
+                            }
+                        } catch (Throwable th2) {
+                            th = th2;
+                            if (is != null) {
+                                try {
+                                    is.close();
+                                } catch (IOException e9) {
+                                }
+                            }
+                            if (fileOutputStream != null) {
+                                try {
+                                    fileOutputStream.close();
+                                } catch (IOException e10) {
+                                }
+                            }
+                            throw th;
+                        }
+                    } catch (Throwable th3) {
+                        th = th3;
+                        fileOutputStream = fos;
+                        if (is != null) {
+                            is.close();
+                        }
+                        if (fileOutputStream != null) {
+                            fileOutputStream.close();
+                        }
+                        throw th;
+                    }
+                }
+                Log.d(NotePaperProvider.TAG, "create getParentFile fail: " + uuid + Token.SEPARATOR + name);
+                if (is != null) {
+                    try {
+                        is.close();
+                    } catch (IOException e11) {
+                    }
+                }
+                if (fileOutputStream == null) {
+                    return false;
+                }
+                try {
+                    fileOutputStream.close();
+                    return false;
+                } catch (IOException e12) {
+                    return false;
+                }
+            } catch (Exception e13) {
+                e = e13;
+                e.printStackTrace();
+                if (is != null) {
+                    is.close();
+                }
+                if (fileOutputStream != null) {
+                    return false;
+                }
+                fileOutputStream.close();
+                return false;
+            }
         }
 
         public void onOpen(SQLiteDatabase db) {
+            this.mSyncState.onDatabaseOpened(db);
             NotePaperProvider.createTriggers(db);
         }
 
-        //删除暂时不需要的代码
         public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-
+            Log.w(NotePaperProvider.TAG, "Upgrading database from version " + oldVersion + " to " + newVersion);
+            db.execSQL("DROP TRIGGER IF EXISTS files_cleanup");
+            if (oldVersion <= 8) {
+                db.execSQL("ALTER TABLE notes ADD COLUMN " + Notes.TOP + " INTEGER DEFAULT 0;");
+                db.execSQL("ALTER TABLE notes ADD COLUMN " + Notes.TAG + " INTEGER DEFAULT 0;");
+                createTagTable(db);
+            }
+            if (oldVersion <= 9) {
+                boolean insert = true;
+                String str = NotePaperProvider.NOTES_TABLE_NAME;
+                String[] strArr = new String[NotePaperProvider.NOTE_ID];
+                strArr[NotePaperProvider.FILE_COLUMN_ID] = NoteFiles.DEFAULT_SORT_ORDER;
+                strArr[NotePaperProvider.NOTES] = Notes.DIRTY;
+                Cursor c = db.query(str, strArr, "uuid=\"inbuilt_note_1\"", null, null, null, null);
+                if (c != null) {
+                    while (c.moveToNext()) {
+                        long id = c.getLong(NotePaperProvider.FILE_COLUMN_ID);
+                        if (c.getInt(NotePaperProvider.NOTES) == 0) {
+                            db.delete(NotePaperProvider.FILES_TABLE_NAME, "note_uuid=\"inbuilt_note_1\"", null);
+                            insert = true;
+                        } else {
+                            insert = false;
+                        }
+                    }
+                    c.close();
+                    if (insert) {
+                        db.delete(NotePaperProvider.NOTES_TABLE_NAME, "uuid=\"inbuilt_note_1\"", null);
+                        NotePaperProvider.deleteSdcardFiles("inbuilt_note_1");
+                    }
+                }
+                if (insert) {
+                    insertBuiltInNoteData(db, "1");
+                }
+            }
+            if (oldVersion <= 10) {
+                try {
+                    db.execSQL("ALTER TABLE notes ADD COLUMN " + Notes.DESKTOP + " INTEGER DEFAULT 0;");
+                } catch (SQLException e) {
+                    Log.e(NotePaperProvider.TAG, "Because we ignore the downgrade, maybe we add duplicate column: desktop");
+                }
+            }
+            if (oldVersion <= NotePaperProvider.FILES) {
+                createAccountTable(db);
+                try {
+                    db.execSQL("ALTER TABLE notes ADD COLUMN " + Notes.ACCOUNT_ID + " INTEGER DEFAULT 0;");
+                    ContentValues cv = new ContentValues();
+                    cv.put(Notes.ENCRYPT, Integer.valueOf(NotePaperProvider.FILE_COLUMN_ID));
+                    db.update(NotePaperProvider.NOTES_TABLE_NAME, cv, Notes.ENCRYPT + " is null", null);
+                } catch (SQLException e2) {
+                    Log.e(NotePaperProvider.TAG, "Because we ignore the downgrade, maybe we add duplicate column: account_id");
+                }
+            }
+            Log.d(NotePaperProvider.TAG, "onUpdate:notes");
         }
+
         public void onDowngrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         }
 
+        public SyncStateContentProviderHelper getSyncState() {
+            return this.mSyncState;
+        }
     }
 
-    @Override
-    //创建DatabaseHelper是为了创建数据库和表
     public boolean onCreate() {
         this.mOpenHelper = new DatabaseHelper(getContext());
         return true;
     }
 
-    @Override
-    //所有的查询都在这里执行
     public Cursor query(Uri uri, String[] projection, String selection, String[] selectionArgs, String sortOrder) {
         String orderBy;
-        //SQLiteQueryBuilder 是一个构造SQL查询语句的辅助类
         SQLiteQueryBuilder qb = new SQLiteQueryBuilder();
-        qb.setTables(NOTES_TABLE_NAME);//指定查询的表
-
-        int match = sUriMatcher.match(uri);//匹配uri，确定查询的方式
-        //判断排序方式
+        qb.setTables(NOTES_TABLE_NAME);
+        int match = sUriMatcher.match(uri);
         if (TextUtils.isEmpty(sortOrder)) {
-            orderBy = Notes.DEFAULT_SORT_ORDER;//设置排序方式
+            orderBy = Notes.DEFAULT_SORT_ORDER;
         } else {
             orderBy = sortOrder;
         }
-        //确定该执行怎样的查询
         switch (match) {
-            //查询所有的Notes
             case NOTES /*1*/:
                 qb.setProjectionMap(sNotesProjectionMap);
-/*                long account = ((NoteApplication) getContext().getApplicationContext()).getMeizuAccount();
+                long account = ((NoteApplication) getContext().getApplicationContext()).getMeizuAccount();
                 if (account > 0) {
                     qb.appendWhere(Notes.ENCRYPT + " IS NULL" + " OR " + Notes.ENCRYPT + "<>" + NOTES + " OR " + "(" + Notes.ENCRYPT + "=" + NOTES + " AND " + Notes.ACCOUNT_ID + "=" + account + ")");
                     break;
                 }
-                break;*/
-                //查询指定ID的note
+                break;
             case NOTE_ID /*2*/:
                 qb.setProjectionMap(sNotesProjectionMap);
-/*                long accountID = ((NoteApplication) getContext().getApplicationContext()).getMeizuAccount();
+                long accountID = ((NoteApplication) getContext().getApplicationContext()).getMeizuAccount();
                 if (accountID <= 0) {
                     qb.appendWhere("_id=" + ContentUris.parseId(uri));
                     break;
                 }
                 qb.appendWhere("_id=" + ContentUris.parseId(uri) + " AND (" + Notes.ENCRYPT + " IS NULL" + " OR " + Notes.ENCRYPT + "<>" + NOTES + " OR " + "(" + Notes.ENCRYPT + "=" + NOTES + " AND " + Notes.ACCOUNT_ID + "=" + accountID + ")" + ")");
-                break;*/
+                break;
             case LIVE_FOLDER_NOTES /*3*/:
                 qb.setProjectionMap(sLiveFolderProjectionMap);
                 break;
             case SYNCSTATE /*4*/:
-            //    return this.mOpenHelper.getSyncState().query(this.mOpenHelper.getReadableDatabase(), projection, selection, selectionArgs, sortOrder);
+                return this.mOpenHelper.getSyncState().query(this.mOpenHelper.getReadableDatabase(), projection, selection, selectionArgs, sortOrder);
             case SYNCSTATE_ID /*5*/:
-            //    return this.mOpenHelper.getSyncState().query(this.mOpenHelper.getReadableDatabase(), projection, "_id=" + ContentUris.parseId(uri) + Token.SEPARATOR + (TextUtils.isEmpty(selection) ? BuildConfig.VERSION_NAME : " AND (" + selection + ")"), selectionArgs, sortOrder);
-
-            //查询所有的文件
+                return this.mOpenHelper.getSyncState().query(this.mOpenHelper.getReadableDatabase(), projection, "_id=" + ContentUris.parseId(uri) + Token.SEPARATOR + (TextUtils.isEmpty(selection) ? BuildConfig.VERSION_NAME : " AND (" + selection + ")"), selectionArgs, sortOrder);
             case FILES /*11*/:
                 qb.setTables(FILES_TABLE_NAME);
                 qb.setProjectionMap(sFilesProjectionMap);
                 orderBy = null;
                 break;
-            //查询指定id的文件
             case FILE_ID /*12*/:
                 qb.setTables(FILES_TABLE_NAME);
                 qb.setProjectionMap(sFilesProjectionMap);
                 qb.appendWhere("_id=" + ContentUris.parseId(uri));
                 orderBy = null;
                 break;
-            //查询所有的额标签
             case TAGS /*13*/:
                 qb.setTables(TAG_TABLE_NAME);
                 qb.setProjectionMap(sTagProjectionMap);
                 orderBy = NoteCategory.DEFAULT_SORT_ORDER;
                 break;
-            //查询指定id的标签
             case TAG_ID /*14*/:
                 qb.setTables(TAG_TABLE_NAME);
                 qb.setProjectionMap(sTagProjectionMap);
                 qb.appendWhere("_id=" + ContentUris.parseId(uri));
                 orderBy = NoteCategory.DEFAULT_SORT_ORDER;
                 break;
-            //查询所有的账户
             case ACCOUNTS /*15*/:
                 qb.setTables(ACCOUNT_TABLE_NAME);
                 qb.setProjectionMap(sAccountProjectionMap);
                 orderBy = null;
                 break;
-            //查询指定id的账户
             case ACCOUNT_ID /*16*/:
                 qb.setTables(ACCOUNT_TABLE_NAME);
                 qb.setProjectionMap(sAccountProjectionMap);
@@ -349,8 +517,6 @@ public class NotePaperProvider extends ContentProvider {
         return c;
     }
 
-    @Override
-    //通过sUriMatcher.match(uri)匹配uri那种类型的查询
     public String getType(Uri uri) {
         switch (sUriMatcher.match(uri)) {
             case NOTES /*1*/:
@@ -376,8 +542,6 @@ public class NotePaperProvider extends ContentProvider {
         }
     }
 
-    @Override
-    //插入，所有数据库的插入insert都在这里，传入ContentValues，
     public Uri insert(Uri uri, ContentValues initialValues) {
         SQLiteDatabase db = this.mOpenHelper.getWritableDatabase();
         ContentValues values;
@@ -413,7 +577,7 @@ public class NotePaperProvider extends ContentProvider {
                 if (!values.containsKey(Notes.DESKTOP)) {
                     values.put(Notes.DESKTOP, Integer.valueOf(FILE_COLUMN_ID));
                 }
-/*                if (TagData.FUN_ENCRYPT) {
+                if (TagData.FUN_ENCRYPT) {
                     if (!values.containsKey(Notes.ENCRYPT)) {
                         values.put(Notes.ENCRYPT, Integer.valueOf(FILE_COLUMN_ID));
                     } else if (values.getAsInteger(Notes.ENCRYPT).intValue() == NOTES) {
@@ -422,7 +586,7 @@ public class NotePaperProvider extends ContentProvider {
                             values.put(Notes.ACCOUNT_ID, Long.valueOf(accountID));
                         }
                     }
-                }*/
+                }
                 rowId = db.insert(NOTES_TABLE_NAME, Notes.NOTE, values);
                 if (rowId >= 0) {
                     noteUri = ContentUris.withAppendedId(uri, rowId);
@@ -432,10 +596,10 @@ public class NotePaperProvider extends ContentProvider {
                 }
                 throw new SQLException("Failed to insert row into " + uri);
             case SYNCSTATE /*4*/:
-/*                rowId = this.mOpenHelper.getSyncState().insert(db, initialValues);
+                rowId = this.mOpenHelper.getSyncState().insert(db, initialValues);
                 if (rowId >= 0) {
                     return ContentUris.withAppendedId(uri, rowId);
-                }*/
+                }
                 return null;
             case FILES /*11*/:
                 if (!initialValues.containsKey(NoteFiles.DIRTY)) {
@@ -472,22 +636,19 @@ public class NotePaperProvider extends ContentProvider {
                 } else {
                     values = new ContentValues();
                 }
-/*                rowId = new NoteUpgradeUtils().add(values, db);
+                rowId = new NoteUpgradeUtils().add(values, db);
                 if (rowId >= 0) {
                     noteUri = ContentUris.withAppendedId(uri, rowId);
                     getContext().getContentResolver().notifyChange(noteUri, null);
                     notifyAppWidgetUpdated(getContext());
                     return noteUri;
-                }*/
+                }
                 throw new SQLException("Failed to insert row into " + uri);
             default:
                 throw new IllegalArgumentException("Unknown URI " + uri);
         }
     }
 
-
-    @Override
-    //所有数据库的删除delete都在这里
     public int delete(Uri uri, String where, String[] whereArgs) {
         int count;
         SQLiteDatabase db = this.mOpenHelper.getWritableDatabase();
@@ -533,9 +694,9 @@ public class NotePaperProvider extends ContentProvider {
                 count = FILE_COLUMN_ID;
                 break;
             case SYNCSTATE /*4*/:
-             //   return this.mOpenHelper.getSyncState().delete(db, where, whereArgs);
+                return this.mOpenHelper.getSyncState().delete(db, where, whereArgs);
             case SYNCSTATE_ID /*5*/:
-            //    return this.mOpenHelper.getSyncState().delete(db, "_id=" + ContentUris.parseId(uri) + Token.SEPARATOR + (TextUtils.isEmpty(where) ? BuildConfig.VERSION_NAME : " AND (" + where + ")"), whereArgs);
+                return this.mOpenHelper.getSyncState().delete(db, "_id=" + ContentUris.parseId(uri) + Token.SEPARATOR + (TextUtils.isEmpty(where) ? BuildConfig.VERSION_NAME : " AND (" + where + ")"), whereArgs);
             case FILES /*11*/:
                 count = db.delete(FILES_TABLE_NAME, where, whereArgs);
                 break;
@@ -564,8 +725,6 @@ public class NotePaperProvider extends ContentProvider {
         return count;
     }
 
-    @Override
-    //所有数据库的update都在这里，只能更新某些数据库
     public int update(Uri uri, ContentValues values, String where, String[] whereArgs) {
         int count;
         SQLiteDatabase db = this.mOpenHelper.getWritableDatabase();
@@ -573,30 +732,30 @@ public class NotePaperProvider extends ContentProvider {
         long accountID;
         switch (type) {
             case NOTES /*1*/:
-/*                if (TagData.FUN_ENCRYPT && values.containsKey(Notes.ENCRYPT) && values.getAsInteger(Notes.ENCRYPT).intValue() == NOTES) {
+                if (TagData.FUN_ENCRYPT && values.containsKey(Notes.ENCRYPT) && values.getAsInteger(Notes.ENCRYPT).intValue() == NOTES) {
                     accountID = ((NoteApplication) getContext().getApplicationContext()).getMeizuAccount();
                     if (accountID > 0) {
                         values.put(Notes.ACCOUNT_ID, Long.valueOf(accountID));
                     }
-                }*/
+                }
                 count = db.update(NOTES_TABLE_NAME, values, where, whereArgs);
                 break;
             case NOTE_ID /*2*/:
                 if (!values.containsKey(Notes.DIRTY)) {
                     values.put(Notes.DIRTY, Boolean.valueOf(true));
                 }
-/*                if (TagData.FUN_ENCRYPT && values.containsKey(Notes.ENCRYPT) && values.getAsInteger(Notes.ENCRYPT).intValue() == NOTES) {
+                if (TagData.FUN_ENCRYPT && values.containsKey(Notes.ENCRYPT) && values.getAsInteger(Notes.ENCRYPT).intValue() == NOTES) {
                     accountID = ((NoteApplication) getContext().getApplicationContext()).getMeizuAccount();
                     if (accountID > 0) {
                         values.put(Notes.ACCOUNT_ID, Long.valueOf(accountID));
                     }
-                }*/
+                }
                 count = db.update(NOTES_TABLE_NAME, values, "_id=" + ContentUris.parseId(uri) + (!TextUtils.isEmpty(where) ? " AND (" + where + ')' : BuildConfig.VERSION_NAME), whereArgs);
                 break;
             case SYNCSTATE /*4*/:
-            //    return this.mOpenHelper.getSyncState().update(db, values, where, whereArgs);
+                return this.mOpenHelper.getSyncState().update(db, values, where, whereArgs);
             case SYNCSTATE_ID /*5*/:
-             //   return this.mOpenHelper.getSyncState().update(db, values, "_id=" + ContentUris.parseId(uri) + Token.SEPARATOR + (TextUtils.isEmpty(where) ? BuildConfig.VERSION_NAME : " AND (" + where + ")"), whereArgs);
+                return this.mOpenHelper.getSyncState().update(db, values, "_id=" + ContentUris.parseId(uri) + Token.SEPARATOR + (TextUtils.isEmpty(where) ? BuildConfig.VERSION_NAME : " AND (" + where + ")"), whereArgs);
             case FILES /*11*/:
                 count = db.update(FILES_TABLE_NAME, values, where, whereArgs);
                 break;
@@ -635,8 +794,6 @@ public class NotePaperProvider extends ContentProvider {
         return count;
     }
 
-    //
-    @Override
     public ContentProviderResult[] applyBatch(ArrayList<ContentProviderOperation> operations) throws OperationApplicationException {
         SQLiteDatabase db = this.mOpenHelper.getWritableDatabase();
         if (db == null) {
@@ -695,10 +852,8 @@ public class NotePaperProvider extends ContentProvider {
         }
     }
 
-    //没搞懂，批量插入数据库
-    @Override
     public int bulkInsert(Uri uri, ContentValues[] values) {
-/*        Log.d(TAG, "start ");
+        Log.d(TAG, "start ");
         if (sUriMatcher.match(uri) != OLD_NOTES) {
             return super.bulkInsert(uri, values);
         }
@@ -752,15 +907,12 @@ public class NotePaperProvider extends ContentProvider {
             return numValues;
         }
         getContext().sendBroadcast(new Intent("android.intent.action.MEDIA_SCANNER_SCAN_FILE", Uri.fromFile(parent)));
-        return numValues;*/
-        return 0;
+        return numValues;
     }
 
-    //没搞懂，这是干什么的
-    @Override
     public ParcelFileDescriptor openFile(Uri uri, String mode) throws FileNotFoundException {
-        ParcelFileDescriptor fileDescriptor = null;
-/*        Cursor cursor;
+        ParcelFileDescriptor fileDescriptor;
+        Cursor cursor;
         int imode = 268435456;
         if (mode != null) {
             if (!mode.equals("r")) {
@@ -774,7 +926,7 @@ public class NotePaperProvider extends ContentProvider {
                 fileDescriptor = null;
                 cursor = null;
                 switch (sUriMatcher.match(uri)) {
-                    case FILE_ID *//*12*//*:
+                    case FILE_ID /*12*/:
                         String fileId = (String) uri.getPathSegments().get(NOTES);
                         SQLiteQueryBuilder qb = new SQLiteQueryBuilder();
                         qb.setProjectionMap(sFilesProjectionMap);
@@ -793,6 +945,7 @@ public class NotePaperProvider extends ContentProvider {
                             }
                         }
                         throw new FileNotFoundException("No relative database record for the file by provider at " + uri);
+                        break;
                 }
                 if (cursor != null) {
                     cursor.close();
@@ -804,7 +957,7 @@ public class NotePaperProvider extends ContentProvider {
         fileDescriptor = null;
         cursor = null;
         switch (sUriMatcher.match(uri)) {
-            case FILE_ID *//*12*//*:
+            case FILE_ID /*12*/:
                 String fileId2 = (String) uri.getPathSegments().get(NOTES);
                 SQLiteQueryBuilder qb2 = new SQLiteQueryBuilder();
                 qb2.setProjectionMap(sFilesProjectionMap);
@@ -822,14 +975,12 @@ public class NotePaperProvider extends ContentProvider {
         }
         if (cursor != null) {
             cursor.close();
-        }*/
+        }
         return fileDescriptor;
     }
 
-    //好像是通知更新界面
-
     public void notifyAppWidgetUpdated(Context context) {
-    //    ((NoteApplication) context.getApplicationContext()).notifyWidgetUpdate();
+        ((NoteApplication) context.getApplicationContext()).notifyWidgetUpdate();
     }
 
     static {
@@ -838,6 +989,7 @@ public class NotePaperProvider extends ContentProvider {
         sUriMatcher.addURI(NotePaper.AUTHORITY, FILES_TABLE_NAME, FILES);
         sUriMatcher.addURI(NotePaper.AUTHORITY, "notefiles/#", FILE_ID);
         sUriMatcher.addURI(NotePaper.AUTHORITY, "live_folders/notes", LIVE_FOLDER_NOTES);
+        sUriMatcher.addURI(NotePaper.AUTHORITY, SyncStateContentProviderHelper.PATH, SYNCSTATE);
         sUriMatcher.addURI(NotePaper.AUTHORITY, "syncstate/#", SYNCSTATE_ID);
         sUriMatcher.addURI(NotePaper.AUTHORITY, "oldnotes", OLD_NOTES);
         sUriMatcher.addURI(NotePaper.AUTHORITY, "category", TAGS);

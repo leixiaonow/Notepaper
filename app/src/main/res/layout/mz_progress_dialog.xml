@@ -1,8 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/body" android:paddingLeft="@dimen/mz_toast_padding" android:paddingTop="@dimen/mz_progress_dialog_padding_no_message" android:paddingRight="@dimen/mz_toast_padding" android:paddingBottom="@dimen/mz_progress_dialog_padding_no_message" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false">
-        <ProgressBar android:id="@android:id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:max="10000" style="?android:attr/progressBarStyle" />
-        <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/message" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mz_progress_dialog_message_padding_left" />
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@id/body"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/mz_progress_dialog_padding_no_message"
+        android:paddingLeft="@dimen/mz_toast_padding"
+        android:paddingRight="@dimen/mz_toast_padding"
+        android:paddingTop="@dimen/mz_progress_dialog_padding_no_message">
+
+        <ProgressBar
+            android:id="@android:id/progress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:max="10000" />
+
+        <TextView
+            android:id="@id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mz_progress_dialog_message_padding_left"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:visibility="gone" />
     </LinearLayout>
 </FrameLayout>

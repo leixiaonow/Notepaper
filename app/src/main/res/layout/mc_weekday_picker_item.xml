@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:layout_gravity="center" android:id="@id/mc_background_img" android:layout_width="@dimen/mc_chooser_item_width" android:layout_height="@dimen/mc_chooser_item_width" />
-    <TextView android:textSize="@dimen/mc_chooser_item_text_size" android:textColor="@color/mc_chooser_text_color_unselected" android:gravity="center" android:id="@id/mc_chooser_text" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@id/mc_background_img"
+        android:layout_width="@dimen/mc_chooser_item_width"
+        android:layout_height="@dimen/mc_chooser_item_width"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@id/mc_chooser_text"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:textColor="@color/mc_chooser_text_color_unselected"
+        android:textSize="@dimen/mc_chooser_item_text_size" />
 </FrameLayout>

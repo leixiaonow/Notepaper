@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/mz_group_interval_header_minHeight"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="@dimen/mz_group_interval_header_text_size" android:textStyle="bold" android:gravity="center_vertical" android:id="@android:id/text1" android:paddingLeft="?android:listPreferredItemPaddingLeft" android:paddingRight="?android:listPreferredItemPaddingRight" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/mz_group_interval_header_title_height" />
-    <ImageView android:gravity="bottom" android:id="@android:id/background" android:background="@drawable/mz_card_new_list_divider" android:layout_width="fill_parent" android:layout_height="@dimen/mz_group_interval_header_divider_height" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:minHeight="@dimen/mz_group_interval_header_minHeight"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@android:id/text1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/mz_group_interval_header_title_height"
+        android:gravity="center_vertical"
+        android:paddingLeft="?android:listPreferredItemPaddingLeft"
+        android:paddingRight="?android:listPreferredItemPaddingRight"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textSize="@dimen/mz_group_interval_header_text_size"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@android:id/background"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/mz_group_interval_header_divider_height"
+        android:background="@drawable/mz_card_new_list_divider"
+        android:gravity="bottom" />
 </LinearLayout>

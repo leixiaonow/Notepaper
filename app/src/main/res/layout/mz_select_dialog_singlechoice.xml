@@ -1,3 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<CheckedTextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?android:textColorAlertDialogListItem" android:ellipsize="end" android:gravity="left|center" android:id="@android:id/text1" android:paddingLeft="@dimen/mz_popup_list_item_content_padding_left" android:paddingRight="@dimen/mz_popup_list_item_singlechoice_padding_right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checkMark="?android:listChoiceIndicatorSingle" android:minHeight="?android:listPreferredItemHeightSmall" android:singleLine="true"
-  xmlns:android="http://schemas.android.com/apk/res/android" />
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:checkMark="?android:listChoiceIndicatorSingle"
+    android:ellipsize="end"
+    android:gravity="left|center"
+    android:minHeight="?android:listPreferredItemHeightSmall"
+    android:paddingLeft="@dimen/mz_popup_list_item_content_padding_left"
+    android:paddingRight="@dimen/mz_popup_list_item_singlechoice_padding_right"
+    android:singleLine="true"
+    android:textAppearance="?android:textAppearanceMedium"
+    android:textColor="?android:textColorAlertDialogListItem" />
