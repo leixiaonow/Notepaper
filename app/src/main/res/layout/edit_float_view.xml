@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meizu.flyme.notepaper.widget.FloatLinearLayout android:orientation="vertical" android:paddingLeft="@dimen/float_touch_margin" android:paddingTop="@dimen/float_touch_margin" android:paddingRight="@dimen/float_touch_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_float_shadow" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:id="@id/scroll_view" android:focusable="false" android:focusableInTouchMode="true" android:fadingEdge="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:overScrollMode="always">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <EditText android:textSize="@dimen/float_title_font" android:textColor="#ff000000" android:textColorHint="@color/common_grey_color" android:id="@id/title" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/float_text_margin" android:layout_marginTop="@dimen/float_title_top_margin" android:layout_marginRight="@dimen/float_text_margin" android:layout_marginBottom="@dimen/float_title_bottom_margin" android:hint="@string/edit_title" android:singleLine="true" android:includeFontPadding="false" android:maxLength="100" android:imeOptions="actionNext" />
+                <LinearLayout android:orientation="vertical" android:id="@id/edit_parent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="@dimen/float_edit_min_height" />
+            </LinearLayout>
+        </ScrollView>
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/bottom_bar" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="@dimen/float_bottom_height">
+            <com.meizu.widget.GlowImageButton android:id="@id/exit" android:paddingLeft="@dimen/float_bootom_button_margin" android:paddingRight="@dimen/float_bootom_button_margin" android:layout_width="wrap_content" android:layout_height="@dimen/float_bottom_height" android:src="@drawable/float_back_icon" android:layout_alignParentLeft="true" />
+            <com.meizu.widget.GlowImageButton android:id="@id/float_switch" android:paddingLeft="@dimen/float_bootom_button_margin" android:paddingRight="@dimen/float_bootom_button_margin" android:layout_width="wrap_content" android:layout_height="@dimen/float_bottom_height" android:src="@drawable/float_switch_icon" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</com.meizu.flyme.notepaper.widget.FloatLinearLayout>

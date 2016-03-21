@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/parent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meizu.widget.EditTextCloud android:textSize="@dimen/translucent_edit_font_size" android:gravity="top" android:id="@id/text" android:background="@drawable/bg_quick_edit" android:paddingLeft="@dimen/translucent_edit_horizontal_padding" android:paddingTop="@dimen/translucent_edit_top_padding" android:paddingRight="@dimen/translucent_edit_horizontal_padding" android:layout_width="fill_parent" android:layout_height="@dimen/translucent_edit_height" android:layout_marginLeft="@dimen/translucent_edit_horizontal_margin" android:layout_marginTop="@dimen/translucent_edit_top_margin" android:layout_marginRight="@dimen/translucent_edit_horizontal_margin" android:hint="@string/edit_hint" android:includeFontPadding="false" android:maxLength="20000" android:lineSpacingExtra="@dimen/widget_text_line_space" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meizu.flyme.notepaper.widget.RichFrameLayout android:orientation="horizontal" android:tag="record" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:layout_marginBottom="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meizu.flyme.notepaper.widget.RecordLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/recordLayout" android:background="@drawable/background_edit_record" android:layout_width="fill_parent" android:layout_height="@dimen/float_record_height" android:layout_marginLeft="@dimen/float_rich_margin" android:layout_marginRight="0.0dip" android:layout_marginBottom="0.0dip" android:layout_weight="1.0">
+        <ImageButton android:gravity="center" android:id="@id/player_control" android:background="@null" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/float_record_left_padding" android:layout_marginRight="0.0dip" android:src="@drawable/btn_record_play" android:scaleType="centerInside" />
+        <SeekBar android:id="@id/player_seekbar" android:layout_width="@dimen/float_record_seekbar_width" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/float_record_time_font" android:textColor="#ff000000" android:gravity="left|center" android:id="@id/player_totaltime" android:visibility="visible" android:layout_width="@dimen/float_record_time_toright" android:layout_height="wrap_content" />
+    </com.meizu.flyme.notepaper.widget.RecordLinearLayout>
+    <EditText android:id="@id/edit" android:background="@null" android:layout_width="@dimen/float_rich_margin" android:layout_height="fill_parent" android:layout_marginBottom="0.0dip" android:cursorVisible="false" android:layout_alignParentRight="true" />
+</com.meizu.flyme.notepaper.widget.RichFrameLayout>

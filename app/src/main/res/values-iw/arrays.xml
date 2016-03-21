@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="export_list1">
+        <item>שתף</item>
+        <item>הוסף לשולחן העבודה</item>
+        <item>יצא טקסט</item>
+    </string-array>
+    <string-array name="export_list2">
+        <item>שתף</item>
+        <item>הוסף לשולחן העבודה</item>
+        <item>יצא תמונה</item>
+    </string-array>
+    <string-array name="picture_chooser_list">
+        <item>מצלמה</item>
+        <item>גלריה</item>
+        <item>מסמך</item>
+    </string-array>
+</resources>

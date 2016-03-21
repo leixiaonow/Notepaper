@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="abc_max_action_buttons">2</integer>
+    <integer name="config_buttonFadeTime">166</integer>
+    <integer name="config_extra_appAnimTime">400</integer>
+    <integer name="config_taskAnimTime">433</integer>
+    <integer name="mc_config_chevron_animation_duration">1417</integer>
+    <integer name="mc_config_chevron_incremental_delay">360</integer>
+    <integer name="mz_config_appAnimTime">310</integer>
+    <integer name="mz_config_editNewAnimTime">350</integer>
+    <integer name="mz_config_taskAnimTime">350</integer>
+    <integer name="mz_config_wallpaperAnimTime">333</integer>
+    <integer name="mz_listview_selector_fade_duration">500</integer>
+    <integer name="mz_notification_big_text_max_line">5</integer>
+</resources>

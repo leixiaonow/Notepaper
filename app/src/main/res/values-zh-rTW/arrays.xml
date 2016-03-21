@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="export_list1">
+        <item>分享</item>
+        <item>添加到桌面</item>
+        <item>導出為文字檔</item>
+    </string-array>
+    <string-array name="export_list2">
+        <item>分享</item>
+        <item>添加到桌面</item>
+        <item>導出為圖片</item>
+    </string-array>
+    <string-array name="picture_chooser_list">
+        <item>相機</item>
+        <item>圖片庫</item>
+        <item>文檔</item>
+    </string-array>
+</resources>

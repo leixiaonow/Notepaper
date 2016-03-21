@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/selection_background" android:drawable="@drawable/mz_btn_default_small_selected_num_background_light" />
+    <item android:id="@id/mz_selection_infiniti" android:drawable="@drawable/mz_btn_default_small_selected_num_move" />
+</layer-list>

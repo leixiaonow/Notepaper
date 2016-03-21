@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meizu.flyme.notepaper.widget.CustomScrollView android:id="@id/scroll_view" android:focusable="false" android:focusableInTouchMode="true" android:fitsSystemWindows="true" android:fadingEdge="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:overScrollMode="always"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/frame_parent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/parent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/edit_parent" android:paddingTop="@dimen/edit_text_top_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <View android:id="@id/empty" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <ImageView android:id="@id/divider" android:tag="divider" android:background="#33000000" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/edit_divider_horizontal_margin" android:layout_marginTop="@dimen/edit_divider_top_margin" android:layout_marginRight="@dimen/edit_divider_horizontal_margin" />
+            <include layout="@layout/edit_last_modify" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/drag_line" android:background="@drawable/line_blue" android:visibility="gone" android:layout_width="@dimen/edit_item_dragshadow_width" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginTop="@dimen/edit_drag_line_top_margin" android:layout_marginRight="0.0dip" />
+    </FrameLayout>
+</com.meizu.flyme.notepaper.widget.CustomScrollView>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="export_list1">
+        <item>Сохранить</item>
+        <item>На рабочий стол</item>
+        <item>Экспорт в текст</item>
+    </string-array>
+    <string-array name="export_list2">
+        <item>Сохранить</item>
+        <item>На рабочий стол</item>
+        <item>Экспорт в рисунок</item>
+    </string-array>
+    <string-array name="picture_chooser_list">
+        <item>Камера</item>
+        <item>Галерея</item>
+        <item>Документ</item>
+    </string-array>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meizu.flyme.notepaper.widget.RichFrameLayout android:orientation="horizontal" android:tag="image" android:paddingBottom="@dimen/edit_image_bottom_margin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/image_frame" android:background="@drawable/background_edit_image" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/edit_image_horizontal_margin" android:layout_weight="1.0">
+        <com.meizu.flyme.notepaper.widget.ScaleImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:maxHeight="@dimen/edit_image_max_height" />
+    </LinearLayout>
+    <EditText android:id="@id/edit" android:background="@null" android:layout_width="@dimen/edit_image_horizontal_margin" android:layout_height="fill_parent" android:cursorVisible="false" android:layout_alignParentRight="true" />
+</com.meizu.flyme.notepaper.widget.RichFrameLayout>

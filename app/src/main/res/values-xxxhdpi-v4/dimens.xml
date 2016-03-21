@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mz_notification_base_padding_right">20.0dip</dimen>
+    <dimen name="mz_notification_big_picture_actions_margin_top">144.0dip</dimen>
+    <dimen name="mz_notification_big_picture_height">192.0dip</dimen>
+    <dimen name="mz_notification_small_icon_height">40.0dip</dimen>
+    <dimen name="mz_notification_small_icon_width">40.0dip</dimen>
+    <dimen name="mz_template_base_large_icon_padding_left">22.0dip</dimen>
+    <dimen name="mz_template_base_large_icon_padding_right">9.0dip</dimen>
+    <dimen name="mz_template_base_line1_padding_top">8.0dip</dimen>
+    <dimen name="mz_template_base_line3_padding_top">0.0dip</dimen>
+    <dimen name="mz_template_base_notification_height">64.0dip</dimen>
+    <dimen name="mz_template_base_progressbar_height">3.0dip</dimen>
+    <dimen name="mz_template_base_progressbar_margin_top">1.2999878dip</dimen>
+    <dimen name="mz_template_big_base_action_divider_margin_end">8.0dip</dimen>
+    <dimen name="mz_template_big_base_action_divider_margin_start">80.0dip</dimen>
+    <dimen name="mz_template_big_notification_min_height">65.0dip</dimen>
+    <dimen name="mz_template_big_picture_margin_end">16.0dip</dimen>
+    <dimen name="mz_template_big_picture_padding_start">72.0dip</dimen>
+    <dimen name="mz_template_big_text_margin_end">16.0dip</dimen>
+    <dimen name="mz_template_inbox_margin_end">8.0dip</dimen>
+    <dimen name="notification_large_icon_height">64.0dip</dimen>
+    <dimen name="notification_large_icon_width">79.0dip</dimen>
+</resources>

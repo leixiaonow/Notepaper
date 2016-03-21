@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/activity_picker_bg" android:layout_width="@dimen/mz_resolve_grid_item_width" android:layout_height="@dimen/mz_resolve_grid_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearance" android:gravity="center" android:id="@id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:minLines="2" android:paddingStart="4.0dip" android:paddingEnd="4.0dip" />
+    <ImageView android:id="@id/icon" android:layout_width="@dimen/mz_resolve_grid_item_icon_width" android:layout_height="@dimen/mz_resolve_grid_item_icon_height" android:layout_marginLeft="@dimen/mz_resolve_grid_item_icon_left" android:layout_marginRight="@dimen/mz_resolve_grid_item_icon_right" android:scaleType="fitXY" />
+    <TextView android:textSize="@dimen/mz_resolve_grid_item_text_size" android:textColor="#ff333333" android:ellipsize="end" android:gravity="center" android:id="@id/text1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mz_resolve_grid_item_gap_between_icon_and_text" android:singleLine="true" android:layout_weight="1.0" />
+</LinearLayout>

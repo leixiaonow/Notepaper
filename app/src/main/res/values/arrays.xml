@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="believePackages">
+        <item>com.google.android.syncadapters.contacts</item>
+        <item>com.meizu.mzsyncservice</item>
+        <item>com.google.process.gapps</item>
+        <item>com.google.android.syncadapters.calendar</item>
+    </string-array>
+    <string-array name="export_list1">
+        <item>Share</item>
+        <item>Add to desktop</item>
+        <item>Export Text</item>
+    </string-array>
+    <string-array name="export_list2">
+        <item>Share</item>
+        <item>Add to desktop</item>
+        <item>Export Picture</item>
+    </string-array>
+    <array name="mc_colorful_round">
+        <item>#ff43b56b</item>
+        <item>#ff44aff9</item>
+        <item>#fff56455</item>
+        <item>#ff5ecddf</item>
+        <item>#fff6b944</item>
+        <item>#ffbd713b</item>
+    </array>
+    <array name="mc_incoming_call_widget_2way_direction_descriptions">
+        <item>@android:string/phoneTypeCompanyMain</item>
+        <item>@null</item>
+        <item>@android:string/phoneTypeCar</item>
+        <item>@null</item>
+    </array>
+    <string-array name="mc_incoming_call_widget_2way_target_descriptions">
+        <item>@string/mc_description_target_answer</item>
+        <item>@null</item>
+        <item>@string/mc_description_target_decline</item>
+        <item>@null</item>
+    </string-array>
+    <array name="mc_incoming_call_widget_2way_targets">
+        <item>@color/mc_multiwaveview_target_answer_color</item>
+        <item>@color/mc_multiwaveview_target_decline_color</item>
+    </array>
+    <array name="mc_incoming_call_widget_2way_targets_small">
+        <item>@color/mc_multiwaveview_target_answer_color_small</item>
+        <item>@color/mc_multiwaveview_target_decline_color_small</item>
+    </array>
+    <string-array name="mz_app_to_next_open_enter_translate_y">
+        <item>1f</item>
+        <item>0.9098163031f</item>
+        <item>0.8200344432f</item>
+        <item>0.7394374282f</item>
+        <item>0.6665901263f</item>
+        <item>0.600401837f</item>
+        <item>0.5400114811f</item>
+        <item>0.4847301952f</item>
+        <item>0.4340413318f</item>
+        <item>0.3874856487f</item>
+        <item>0.3446613088f</item>
+        <item>0.3052812859f</item>
+        <item>0.2691733639f</item>
+        <item>0.2359931114f</item>
+        <item>0.2056257176f</item>
+        <item>0.1778415614f</item>
+        <item>0.1525258324f</item>
+        <item>0.1295637199f</item>
+        <item>0.1088404133f</item>
+        <item>0.0901836969f</item>
+        <item>0.07347876f</item>
+        <item>0.07347876f</item>
+        <item>0.058783008f</item>
+        <item>0.0458094145f</item>
+        <item>0.0346727899f</item>
+        <item>0.0251435132f</item>
+        <item>0.0172789897f</item>
+        <item>0.0109070034f</item>
+        <item>0.0060849598f</item>
+        <item>0.0026406429f</item>
+        <item>0.0006314581f</item>
+        <item>0f</item>
+    </string-array>
+    <string-array name="mz_edit_new_close_exit_alpha">
+        <item>1f</item>
+        <item>1f</item>
+        <item>1f</item>
+        <item>1f</item>
+        <item>1f</item>
+        <item>1f</item>
+        <item>1f</item>
+        <item>1f</item>
+        <item>1f</item>
+        <item>1f</item>
+        <item>1f</item>
+        <item>1f</item>
+        <item>1f</item>
+        <item>1f</item>
+        <item>1f</item>
+        <item>1f</item>
+        <item>0.93f</item>
+        <item>0.78f</item>
+        <item>0.58f</item>
+        <item>0.36f</item>
+        <item>0.14f</item>
+        <item>0f</item>
+    </string-array>
+    <string-array name="mz_edit_new_close_exit_bg_alpha">
+        <item>0.2f</item>
+        <item>0.2f</item>
+        <item>0.2f</item>
+        <item>0.2f</item>
+        <item>0.2f</item>
+        <item>0.2f</item>
+        <item>0.19f</item>
+        <item>0.18f</item>
+        <item>0.16f</item>
+        <item>0.15f</item>
+        <item>0.14f</item>
+        <item>0.12f</item>
+        <item>0.11f</item>
+        <item>0.1f</item>
+        <item>0.09f</item>
+        <item>0.08f</item>
+        <item>0.06f</item>
+        <item>0.05f</item>
+        <item>0.04f</item>
+        <item>0.02f</item>
+        <item>0.01f</item>
+        <item>0f</item>
+    </string-array>
+    <string-array name="mz_edit_new_close_exit_scale">
+        <item>1f</item>
+        <item>1f</item>
+        <item>1f</item>
+        <item>1f</item>
+        <item>0.999f</item>
+        <item>0.997f</item>
+        <item>0.994f</item>
+        <item>0.991f</item>
+        <item>0.987f</item>
+        <item>0.981f</item>
+        <item>0.975f</item>
+        <item>0.967f</item>
+        <item>0.957f</item>
+        <item>0.946f</item>
+        <item>0.933f</item>
+        <item>0.916f</item>
+        <item>0.897f</item>
+        <item>0.873f</item>
+        <item>0.841f</item>
+        <item>0.798f</item>
+        <item>0.7f</item>
+    </string-array>
+    <string-array name="mz_edit_new_open_enter_alpha">
+        <item>0f</item>
+        <item>0.14f</item>
+        <item>0.36f</item>
+        <item>0.58f</item>
+        <item>0.78f</item>
+        <item>0.93f</item>
+        <item>1f</item>
+        <item>1f</item>
+        <item>1f</item>
+        <item>1f</item>
+        <item>1f</item>
+        <item>1f</item>
+        <item>1f</item>
+        <item>1f</item>
+        <item>1f</item>
+        <item>1f</item>
+        <item>1f</item>
+        <item>1f</item>
+        <item>1f</item>
+        <item>1f</item>
+        <item>1f</item>
+        <item>1f</item>
+    </string-array>
+    <string-array name="mz_edit_new_open_enter_scale">
+        <item>0.7f</item>
+        <item>0.798f</item>
+        <item>0.841f</item>
+        <item>0.873f</item>
+        <item>0.897f</item>
+        <item>0.916f</item>
+        <item>0.933f</item>
+        <item>0.946f</item>
+        <item>0.957f</item>
+        <item>0.967f</item>
+        <item>0.975f</item>
+        <item>0.981f</item>
+        <item>0.987f</item>
+        <item>0.991f</item>
+        <item>0.994f</item>
+        <item>0.997f</item>
+        <item>0.999f</item>
+        <item>1f</item>
+        <item>1f</item>
+        <item>1f</item>
+        <item>1f</item>
+    </string-array>
+    <string-array name="picture_chooser_list">
+        <item>Camera</item>
+        <item>Gallery</item>
+        <item>Document</item>
+    </string-array>
+    <string-array name="system_ringtone_name_list">
+        <item>Beep-Beep-Beep Alarm</item>
+        <item>Rhythm Blues</item>
+        <item>Commander</item>
+        <item>Dream City</item>
+        <item>Drifting</item>
+        <item>Hometown</item>
+        <item>Life</item>
+        <item>Meiying</item>
+        <item>Moonlight over Jiangnan</item>
+        <item>Pouring Rain</item>
+        <item>Street Zone</item>
+        <item>The Autumn</item>
+        <item>Wind Knight</item>
+        <item>BeeBeep Alarm</item>
+        <item>Movement</item>
+        <item>Cute Call</item>
+        <item>Code Word</item>
+        <item>Empire</item>
+        <item>Flower Fairies</item>
+        <item>Laputa</item>
+        <item>Little Crystal</item>
+        <item>Matrix</item>
+        <item>Mysterious Journey</item>
+        <item>The Shepherd</item>
+        <item>Pure</item>
+        <item>Playfulness</item>
+        <item>Shining</item>
+        <item>Silent Night</item>
+        <item>Link</item>
+        <item>Piezo Alarm</item>
+        <item>Buzzer Alarm</item>
+        <item>Ringing Alarm</item>
+        <item>Rooster Alarm</item>
+        <item>Waking</item>
+        <item>Dawn</item>
+        <item>Elegance</item>
+        <item>Waltz</item>
+        <item>Dazzling Joy</item>
+        <item>Morning Dew</item>
+        <item>Guitar Riff</item>
+        <item>After School</item>
+        <item>Celtic</item>
+        <item>Classic Ring</item>
+        <item>Freshness</item>
+        <item>Mario</item>
+        <item>Twilight Dance</item>
+        <item>Crystal</item>
+        <item>Good Night</item>
+        <item>Tumbler</item>
+        <item>Sunshine</item>
+        <item>Interstellar</item>
+        <item>Midnight Stroll</item>
+        <item>Mermaid in Moonlight</item>
+        <item>Polestar</item>
+        <item>Silence of Night</item>
+        <item>Birthday Present</item>
+        <item>Ripple</item>
+        <item>Meteor</item>
+        <item>Chocolate Box</item>
+        <item>Tunnel</item>
+        <item>Grasshopper</item>
+        <item>Joker</item>
+        <item>Connor</item>
+        <item>Drop</item>
+        <item>Tapping</item>
+        <item>Arrival</item>
+        <item>Doorbell</item>
+        <item>Red Wine Cork</item>
+        <item>Triumph</item>
+        <item>Agile</item>
+        <item>Flyme Tune Bell</item>
+        <item>Flyme Tune Dream</item>
+        <item>Flyme Tune Guitar</item>
+        <item>Flyme Tune Piano</item>
+        <item>Flyme Tune Synth</item>
+        <item>Flyme Tune Techno</item>
+        <item>Flyme Tune Theme</item>
+    </string-array>
+    <string-array name="system_ringtone_value_list">
+        <item>Beep-Beep-Beep Alarm</item>
+        <item>节奏Blues</item>
+        <item>指挥家</item>
+        <item>梦想之城</item>
+        <item>灵动</item>
+        <item>家</item>
+        <item>生活</item>
+        <item>魅影</item>
+        <item>月下江南</item>
+        <item>雨纷飞</item>
+        <item>街头地带</item>
+        <item>那年秋天</item>
+        <item>风中骑士</item>
+        <item>BeeBeep Alarm</item>
+        <item>跃动</item>
+        <item>可爱呼唤</item>
+        <item>秒速</item>
+        <item>帝国</item>
+        <item>精灵</item>
+        <item>殿堂</item>
+        <item>凌波</item>
+        <item>科技矩阵</item>
+        <item>神秘之旅</item>
+        <item>牧童</item>
+        <item>弦音</item>
+        <item>顽皮</item>
+        <item>闪耀</item>
+        <item>静夜</item>
+        <item>连接</item>
+        <item>Piezo Alarm</item>
+        <item>Buzzer Alarm</item>
+        <item>Ringing Alarm</item>
+        <item>Rooster Alarm</item>
+        <item>梦醒</item>
+        <item>清晨</item>
+        <item>翩翩</item>
+        <item>华尔兹</item>
+        <item>缤纷乐</item>
+        <item>晨露</item>
+        <item>东岸往事</item>
+        <item>放学</item>
+        <item>欢宴</item>
+        <item>经典</item>
+        <item>灵动</item>
+        <item>玛丽奥</item>
+        <item>暮光之舞</item>
+        <item>水晶</item>
+        <item>晚安</item>
+        <item>不倒翁</item>
+        <item>心动</item>
+        <item>星际</item>
+        <item>夜色</item>
+        <item>月光美人鱼</item>
+        <item>北极星</item>
+        <item>静夜</item>
+        <item>礼物</item>
+        <item>涟漪</item>
+        <item>流星</item>
+        <item>巧克力盒</item>
+        <item>隧道</item>
+        <item>跳跃</item>
+        <item>小鬼头</item>
+        <item>转角</item>
+        <item>水滴</item>
+        <item>轻敲</item>
+        <item>到达</item>
+        <item>门铃</item>
+        <item>红酒木塞</item>
+        <item>胜利</item>
+        <item>敏捷</item>
+        <item>\#Bell</item>
+        <item>\#Dream</item>
+        <item>\#Guitar</item>
+        <item>\#Piano</item>
+        <item>\#Synth</item>
+        <item>\#Techno</item>
+        <item>\#Theme</item>
+    </string-array>
+    <string-array name="values_close_enter_alpha_wallpaper">
+        <item>0.0</item>
+        <item>0.0</item>
+        <item>0.01</item>
+        <item>0.01</item>
+        <item>0.02</item>
+        <item>0.04</item>
+        <item>0.06</item>
+        <item>0.08</item>
+        <item>0.11</item>
+        <item>0.14</item>
+        <item>0.18</item>
+        <item>0.22</item>
+        <item>0.28</item>
+        <item>0.34</item>
+        <item>0.42</item>
+        <item>0.51</item>
+        <item>0.61</item>
+        <item>0.74</item>
+        <item>0.89</item>
+        <item>1.0</item>
+    </string-array>
+    <string-array name="values_close_enter_scale_wallpaper">
+        <item>0.0</item>
+        <item>0.14</item>
+        <item>0.2725</item>
+        <item>0.385</item>
+        <item>0.48</item>
+        <item>0.565</item>
+        <item>0.6375</item>
+        <item>0.7</item>
+        <item>0.7575</item>
+        <item>0.805</item>
+        <item>0.845</item>
+        <item>0.88</item>
+        <item>0.91</item>
+        <item>0.935</item>
+        <item>0.9575</item>
+        <item>0.9725</item>
+        <item>0.985</item>
+        <item>0.9925</item>
+        <item>0.9975</item>
+        <item>1.0</item>
+    </string-array>
+    <string-array name="values_close_exit_alpha_wallpaper">
+        <item>0.0</item>
+        <item>0.04</item>
+        <item>0.14</item>
+        <item>0.29</item>
+        <item>0.44</item>
+        <item>0.57</item>
+        <item>0.68</item>
+        <item>0.77</item>
+        <item>0.84</item>
+        <item>0.9</item>
+        <item>0.94</item>
+        <item>0.97</item>
+        <item>0.99</item>
+        <item>1.0</item>
+        <item>1.0</item>
+        <item>1.0</item>
+        <item>1.0</item>
+        <item>1.0</item>
+        <item>1.0</item>
+        <item>1.0</item>
+    </string-array>
+    <string-array name="values_close_exit_scale_wallpaper">
+        <item>0.0</item>
+        <item>0.006</item>
+        <item>0.025</item>
+        <item>0.059</item>
+        <item>0.109</item>
+        <item>0.175</item>
+        <item>0.258</item>
+        <item>0.352</item>
+        <item>0.453</item>
+        <item>0.554</item>
+        <item>0.647</item>
+        <item>0.731</item>
+        <item>0.801</item>
+        <item>0.86</item>
+        <item>0.907</item>
+        <item>0.943</item>
+        <item>0.969</item>
+        <item>0.987</item>
+        <item>0.997</item>
+        <item>1.0</item>
+    </string-array>
+    <string-array name="values_close_exit_translate_app">
+        <item>0.0f</item>
+        <item>0.12734375f</item>
+        <item>0.290538194f</item>
+        <item>0.445486111f</item>
+        <item>0.579947917f</item>
+        <item>0.678038194f</item>
+        <item>0.747916667f</item>
+        <item>0.802170139f</item>
+        <item>0.845746528f</item>
+        <item>0.881510417f</item>
+        <item>0.911024306f</item>
+        <item>0.935503472f</item>
+        <item>0.95546875f</item>
+        <item>0.971440972f</item>
+        <item>0.983767361f</item>
+        <item>0.992708333f</item>
+        <item>0.998090278f</item>
+        <item>1.0f</item>
+    </string-array>
+    <string-array name="values_extra_close_exit_translate_app">
+        <item>0.0</item>
+        <item>0.0047222222</item>
+        <item>0.0180555556</item>
+        <item>0.0391666667</item>
+        <item>0.0669444444</item>
+        <item>0.100462963</item>
+        <item>0.1387962963</item>
+        <item>0.1812037037</item>
+        <item>0.2268518519</item>
+        <item>0.2749074074</item>
+        <item>0.3247222222</item>
+        <item>0.3756481481</item>
+        <item>0.4271296296</item>
+        <item>0.4785185185</item>
+        <item>0.5294444444</item>
+        <item>0.5792592593</item>
+        <item>0.6277777778</item>
+        <item>0.6744444444</item>
+        <item>0.7188888889</item>
+        <item>0.7609259259</item>
+        <item>0.8002777778</item>
+        <item>0.8365740741</item>
+        <item>0.8696296296</item>
+        <item>0.8993518519</item>
+        <item>0.925462963</item>
+        <item>0.9478703704</item>
+        <item>0.9664814815</item>
+        <item>0.9810185185</item>
+        <item>0.9914814815</item>
+        <item>0.9978703704</item>
+        <item>1.0</item>
+    </string-array>
+    <string-array name="values_extra_open_enter_translate_app">
+        <item>0.0</item>
+        <item>0.0037037037</item>
+        <item>0.0149074074</item>
+        <item>0.0334259259</item>
+        <item>0.0590740741</item>
+        <item>0.0915740741</item>
+        <item>0.1301851852</item>
+        <item>0.1741666667</item>
+        <item>0.2228703704</item>
+        <item>0.2750925926</item>
+        <item>0.3299074074</item>
+        <item>0.3862962963</item>
+        <item>0.4431481481</item>
+        <item>0.4996296296</item>
+        <item>0.5548148148</item>
+        <item>0.6081481481</item>
+        <item>0.6589814815</item>
+        <item>0.7068518519</item>
+        <item>0.7513888889</item>
+        <item>0.7924074074</item>
+        <item>0.8297222222</item>
+        <item>0.8632407407</item>
+        <item>0.892962963</item>
+        <item>0.9188888889</item>
+        <item>0.9410185185</item>
+        <item>0.959537037</item>
+        <item>0.9744444444</item>
+        <item>0.9857407407</item>
+        <item>0.9937962963</item>
+        <item>0.9984259259</item>
+        <item>1.0</item>
+    </string-array>
+    <string-array name="values_open_enter_translate_app">
+        <item>0.0f</item>
+        <item>0.240190972f</item>
+        <item>0.466145833f</item>
+        <item>0.617708333f</item>
+        <item>0.721440972f</item>
+        <item>0.7921875f</item>
+        <item>0.844270833f</item>
+        <item>0.886197917f</item>
+        <item>0.919010417f</item>
+        <item>0.944010417f</item>
+        <item>0.9625f</item>
+        <item>0.975954861f</item>
+        <item>0.985416667f</item>
+        <item>0.991840278f</item>
+        <item>0.996006944f</item>
+        <item>0.9984375f</item>
+        <item>0.999652778f</item>
+        <item>1.0f</item>
+    </string-array>
+    <string-array name="values_open_staggeredgridview_alpha">
+        <item>0.0</item>
+        <item>0.0</item>
+        <item>0.001</item>
+        <item>0.003</item>
+        <item>0.006</item>
+        <item>0.008</item>
+        <item>0.12</item>
+        <item>0.16</item>
+        <item>0.2</item>
+        <item>0.24</item>
+        <item>0.29</item>
+        <item>0.34</item>
+        <item>0.39</item>
+        <item>0.45</item>
+        <item>0.5</item>
+        <item>0.55</item>
+        <item>0.61</item>
+        <item>0.66</item>
+        <item>0.71</item>
+        <item>0.76</item>
+        <item>0.8</item>
+        <item>0.84</item>
+        <item>0.88</item>
+        <item>0.92</item>
+        <item>0.94</item>
+        <item>0.97</item>
+        <item>0.99</item>
+        <item>1.0</item>
+    </string-array>
+    <string-array name="values_open_staggeredgridview_scale">
+        <item>0.0</item>
+        <item>0.005</item>
+        <item>0.025</item>
+        <item>0.07</item>
+        <item>0.16</item>
+        <item>0.29</item>
+        <item>0.425</item>
+        <item>0.535</item>
+        <item>0.615</item>
+        <item>0.68</item>
+        <item>0.735</item>
+        <item>0.775</item>
+        <item>0.815</item>
+        <item>0.845</item>
+        <item>0.870</item>
+        <item>0.895</item>
+        <item>0.915</item>
+        <item>0.930</item>
+        <item>0.945</item>
+        <item>0.955</item>
+        <item>0.965</item>
+        <item>0.975</item>
+        <item>0.980</item>
+        <item>0.990</item>
+        <item>0.990</item>
+        <item>0.995</item>
+        <item>0.995</item>
+        <item>1.0</item>
+    </string-array>
+</resources>

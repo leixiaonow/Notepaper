@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/last_parent" android:tag="last_modify" android:layout_width="fill_parent" android:layout_height="@dimen/edit_last_modify_height" android:layout_marginLeft="@dimen/edit_last_horizontal_margin" android:layout_marginRight="@dimen/edit_last_horizontal_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/edit_last_modify_font_size" android:textColor="#80000000" android:gravity="left" android:id="@id/last_modify" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <Spinner android:gravity="right" android:id="@id/tag" android:layout_width="wrap_content" android:layout_height="20.0dip" android:drawSelectorOnTop="true" android:dropDownVerticalOffset="-22.0dip" android:spinnerMode="dropdown" />
+</LinearLayout>

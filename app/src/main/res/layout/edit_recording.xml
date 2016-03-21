@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meizu.flyme.notepaper.widget.RecordingLayout android:tag="recording" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/edit_record_unselect" android:layout_width="fill_parent" android:layout_height="@dimen/edit_recording_height" android:layout_marginLeft="@dimen/edit_recording_horizontal_margin" android:layout_marginRight="@dimen/edit_recording_horizontal_margin" android:layout_marginBottom="@dimen/edit_recording_bottom_margin">
+        <ImageView android:id="@id/anim" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/edit_recording_anim_left_margin" android:src="@drawable/recording_scaledrawable" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/time" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <ImageView android:id="@id/pause" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/edit_recording_pause_right_margin" android:src="@drawable/mz_ic_pause" android:scaleType="matrix" />
+        <ImageView android:id="@id/stop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/edit_recording_stop_right_margin" android:src="@drawable/mz_ic_stop" android:scaleType="matrix" />
+    </LinearLayout>
+</com.meizu.flyme.notepaper.widget.RecordingLayout>

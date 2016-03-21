@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/mz_alert_dialog_edittext_padding_top" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/InputText" android:drawingCacheQuality="auto" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/new_tag" android:maxLines="1" android:singleLine="true" android:layout_centerHorizontal="true" android:imeOptions="actionDone" style="@style/Widget.DeviceDefault.Light.EditText.Dialog" />
+</LinearLayout>

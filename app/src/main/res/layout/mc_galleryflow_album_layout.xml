@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/mc_galleryflow_ablum_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="@color/mc_galleryflow_album_foreground"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/mc_galleryflow_album_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <TextView android:textSize="@dimen/mc_galleryflow_album_title_size" android:textColor="@color/mc_galleryflow_album_title_color" android:gravity="bottom|center" android:layout_gravity="bottom" android:id="@id/mc_galleryflow_album_title" android:background="@drawable/mc_galleryflow_ablum_title_bg" android:paddingBottom="@dimen/mc_galleryflow_album_title_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:shadowColor="@color/mc_galleryflow_album_title_shadow_color" android:shadowDx="2.0" android:shadowDy="2.0" android:shadowRadius="3.0" />
+</FrameLayout>

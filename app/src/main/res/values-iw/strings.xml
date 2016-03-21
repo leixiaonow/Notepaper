@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">נווט לדף הבית</string>
+    <string name="abc_action_bar_up_description">נווט למעלה</string>
+    <string name="abc_action_menu_overflow_description">עוד אפשרויות</string>
+    <string name="abc_action_mode_done">בוצע</string>
+    <string name="abc_activity_chooser_view_see_all">ראה הכול</string>
+    <string name="abc_activitychooserview_choose_application">בחר אפליקציה</string>
+    <string name="abc_searchview_description_clear">מחק שאילתה</string>
+    <string name="abc_searchview_description_query">שאילתת חיפוש</string>
+    <string name="abc_searchview_description_search">חפש</string>
+    <string name="abc_searchview_description_submit">שלח שאילתה</string>
+    <string name="abc_searchview_description_voice">חיפוש קולי</string>
+    <string name="abc_shareactionprovider_share_with">שתף עם</string>
+    <string name="abc_shareactionprovider_share_with_application">שתף עם %s</string>
+    <string name="add_new_tag">קבוצה חדשה</string>
+    <string name="all_tag">הכל</string>
+    <string name="app_name">Note Paper</string>
+    <string name="audio_note">פתק קולי</string>
+    <string name="cancel">בטל</string>
+    <string name="cancel_hightlight">בטל את המסומן</string>
+    <string name="create_sharing">בתהליך, המתן...</string>
+    <string name="create_time">נוצר ב:</string>
+    <string name="date_time_set">הגדר</string>
+    <string name="delete">מחק</string>
+    <string name="delete_one_tag">למחוק את הקבוצה הזו?</string>
+    <string name="delete_one_tip">מחק?</string>
+    <string name="delete_tag_tip">פתקים לא נמחקו בקבוצה</string>
+    <string name="delete_tip">למחוק פריט?</string>
+    <string name="deleting">מוחק</string>
+    <string name="edit_hint">טקסט</string>
+    <string name="edit_title">כותרת</string>
+    <string name="exporting">בייצוא, אנא המתן</string>
+    <string name="faild_to_create_file">נכשל ביצירת קובץ</string>
+    <string name="finish_export">הייצוא הושלם</string>
+    <string name="fmt_pre_yesterday">אתמול</string>
+    <string name="folder_already_exsite">הקבוצה כבר קיימת</string>
+    <string name="folder_null_not_save">לא ניתן לשמור קבוצה ריקה</string>
+    <string name="image_limit_tip">תמונות מירביות - 10</string>
+    <string name="insert_pic_title">הכנס תמונה</string>
+    <string name="insert_sd_card">טען התקן חיצוני</string>
+    <string name="last_modified">השינוי האחרון:</string>
+    <string name="max_length_reached">הגעת לאורך המקסימלי!</string>
+    <string name="mc_action_settings">הגדרות</string>
+    <string name="mc_app_name">MeizuCommon</string>
+    <string name="mc_cancel">בטל</string>
+    <string name="mc_description_target_answer">ענה</string>
+    <string name="mc_description_target_decline">דחה</string>
+    <string name="mc_every_day">כל יום</string>
+    <string name="mc_friday">"ו'"</string>
+    <string name="mc_hello_world">אחלון עולם!</string>
+    <string name="mc_hour">שעה</string>
+    <string name="mc_minute">דקה</string>
+    <string name="mc_monday">"ב'"</string>
+    <string name="mc_never">חד פעמית</string>
+    <string name="mc_saturday">"ש'"</string>
+    <string name="mc_second">שניה</string>
+    <string name="mc_sunday">"א'"</string>
+    <string name="mc_thursday">"ה'"</string>
+    <string name="mc_tuesday">"ג'"</string>
+    <string name="mc_wednesday">"ד'"</string>
+    <string name="mc_weekend">סוף שבוע</string>
+    <string name="mc_working_day">ימי שבוע</string>
+    <string name="mc_yes">אישור</string>
+    <string name="menu_change_paper">שנה רקע</string>
+    <string name="menu_delete">מחק</string>
+    <string name="menu_encrypt">הצפן</string>
+    <string name="menu_export_pic">ייצא לתמונה</string>
+    <string name="menu_export_text">ייצא לטקסט</string>
+    <string name="menu_float">מצב רחיפה</string>
+    <string name="menu_share">חלוק</string>
+    <string name="menu_tip_edit">חדש</string>
+    <string name="menu_tip_list">רשימה</string>
+    <string name="menu_tip_pic">תמונה</string>
+    <string name="menu_tip_record">הקלטה</string>
+    <string name="menu_top">עליון</string>
+    <string name="more_item_label">עוד</string>
+    <string name="mz_date_time_day">יום</string>
+    <string name="mz_date_time_hour">שעה</string>
+    <string name="mz_date_time_min">דקה</string>
+    <string name="mz_date_time_month">"ח'"</string>
+    <string name="mz_date_time_sec">שניה</string>
+    <string name="mz_date_time_year">שנה</string>
+    <string name="mz_numeric_date_format_dmy">EEE, d/M/yyyy</string>
+    <string name="mz_numeric_date_format_dym">EEE, d/yyyy/M</string>
+    <string name="mz_numeric_date_format_mdy">EEE, M/d/yyyy</string>
+    <string name="mz_numeric_date_format_myd">EEE, M/yyyy/d</string>
+    <string name="mz_numeric_date_format_ydm">yyyy/d/M, EEE</string>
+    <string name="mz_numeric_date_format_ymd">yyyy/M/d, EEE</string>
+    <string name="new_tag">קבוצה חדשה</string>
+    <string name="new_tag_pop">קבוצה</string>
+    <string name="no_note">אין פתק</string>
+    <string name="note_group">קבוצה</string>
+    <string name="note_not_exist">הפתק הזה לא קיים</string>
+    <string name="ok">אוקי</string>
+    <string name="panel_color">צבע</string>
+    <string name="pattern_a_hour_before">לפני שעה</string>
+    <string name="pattern_a_minute_before">לפני דקה</string>
+    <string name="pattern_hour_before">לפני , שעות</string>
+    <string name="pattern_minute_before">לפני , דקות</string>
+    <string name="pattern_month_day" formatted="false">%-m/%-e</string>
+    <string name="pattern_month_day_hour_minute" formatted="false">%-m/%-e %H:%M</string>
+    <string name="pattern_month_day_hour_minute_12" formatted="false">%-m/%-e %p %I:%M</string>
+    <string name="pattern_week_month_day_hour_minute" formatted="false">%a %-m/%-e %H:%M</string>
+    <string name="pattern_week_month_day_hour_minute_12" formatted="false">%a %-m/%-e %p %I:%M</string>
+    <string name="pattern_year_month" formatted="false">%Y/%-m</string>
+    <string name="pattern_year_month_day" formatted="false">%Y/%-m/%-e</string>
+    <string name="pattern_year_month_day_hour_minute" formatted="false">%Y/%-m/%-e %H:%M</string>
+    <string name="pattern_year_month_day_hour_minute_12" formatted="false">%Y/%-m/%-e %p %I:%M</string>
+    <string name="pattern_yesterday">אתמול</string>
+    <string name="record">מטלות</string>
+    <string name="record_fail">ההקלטה נכשלה</string>
+    <string name="record_limit_tip">מספר ההקלטות המירבי - 10</string>
+    <string name="record_too_short">זמן ההקלטה פחות משניה אחת, מבטל</string>
+    <string name="recording_stopped">ההקלטה נעצרה</string>
+    <string name="see_more">צפה בעוד פתקים</string>
+    <string name="share">חלוק</string>
+    <string name="share_via">חלוק דרך</string>
+    <string name="short_edit_hint">הקלק להקליט</string>
+    <string name="storage_is_full">הדיסק מלא</string>
+    <string name="tip_delete_pic">הסר תמונה?</string>
+    <string name="tip_delete_record">הסר הקלטה?</string>
+    <string name="tip_empty_content">אין תוכן!</string>
+    <string name="tip_no_file">לא נמצא</string>
+    <string name="toast_tag_limit">מספר הקבוצות הגיע למקסימום.</string>
+    <string name="voice_error_audio">בעיית הקלטה</string>
+    <string name="voice_error_client">בעיה בצד השני</string>
+    <string name="voice_error_insufficient_permissions">אין הרשאה</string>
+    <string name="voice_error_network">בעית רשת אחרת</string>
+    <string name="voice_error_network_timeout">בעית רשת</string>
+    <string name="voice_error_no_match">אין אפשרות למצוא</string>
+    <string name="voice_error_recognizer_busy">שירות הזיהוי עסוק</string>
+    <string name="voice_error_server">השרת שלח תקלה</string>
+    <string name="voice_error_speech_timeout">אין שיטת דיבור</string>
+</resources>

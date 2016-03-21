@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="top" android:id="@id/icon" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mz_ic_popup_share" />
+        <TextView android:textSize="18.0sp" android:textColor="#ff32a5e7" android:ellipsize="end" android:id="@id/pic_share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_pic" android:singleLine="true" />
+        <ImageView android:id="@id/divider" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/line" />
+        <TextView android:textSize="18.0sp" android:textColor="@android:color/black" android:ellipsize="end" android:id="@id/old_share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_original" android:singleLine="true" />
+    </LinearLayout>
+    <com.meizu.widget.LimitedHeightScrollView android:id="@id/resolver_grid" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mz_resolve_grid_left" android:layout_marginRight="@dimen/mz_resolve_grid_right" android:layout_marginBottom="@dimen/mz_resolve_grid_bottom" android:fillViewport="true" />
+</LinearLayout>

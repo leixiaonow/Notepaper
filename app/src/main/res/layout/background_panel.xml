@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fbffffff" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="#33000000" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <com.meizu.flyme.notepaper.widget.FontPanelLinearLayout android:gravity="center_vertical" android:id="@id/font_panel" android:layout_width="fill_parent" android:layout_height="@dimen/font_panel_height" android:layout_marginBottom="@dimen/font_panel_bottom_margin">
+        <ImageView android:id="@id/font_dec" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font_button_margin" android:src="@drawable/ic_title_chararter_dec" />
+        <SeekBar android:id="@id/font_bar" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font_bar_margin" android:layout_marginRight="@dimen/font_bar_margin" android:layout_weight="1.0" />
+        <ImageView android:id="@id/font_inc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/font_button_margin" android:src="@drawable/ic_title_chararter_inc" />
+    </com.meizu.flyme.notepaper.widget.FontPanelLinearLayout>
+    <com.meizu.flyme.notepaper.widget.HorizontalBackgoundView android:gravity="center_vertical" android:id="@id/scroll_parent" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="@dimen/color_panel_height" android:layout_marginLeft="@dimen/color_panel_horizontal_margin" android:layout_marginRight="@dimen/color_panel_horizontal_margin" android:layout_marginBottom="10.0dip" android:fadeScrollbars="false" />
+</LinearLayout>

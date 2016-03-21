@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/mz_sb_share" android:id="@id/action_share" android:title="@string/share" android:showAsAction="always" />
+    <item android:icon="@drawable/mz_sb_delete" android:id="@id/action_delete" android:title="@string/delete" android:showAsAction="always" />
+    <item android:id="@id/action_top" android:checked="true" android:title="@string/menu_top" android:checkable="true" android:showAsAction="never" />
+    <item android:id="@id/action_send_desktop" android:checked="true" android:title="@string/send_to_desktop" android:checkable="true" android:showAsAction="never" />
+</menu>

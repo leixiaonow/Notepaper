@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Перейти на главный экран</string>
+    <string name="abc_action_bar_up_description">Перейти вверх</string>
+    <string name="abc_action_menu_overflow_description">Другие параметры</string>
+    <string name="abc_action_mode_done">Готово</string>
+    <string name="abc_activity_chooser_view_see_all">Показать все</string>
+    <string name="abc_activitychooserview_choose_application">Выбрать приложение</string>
+    <string name="abc_searchview_description_clear">Удалить запрос</string>
+    <string name="abc_searchview_description_query">Поисковый запрос</string>
+    <string name="abc_searchview_description_search">Поиск</string>
+    <string name="abc_searchview_description_submit">Отправить запрос</string>
+    <string name="abc_searchview_description_voice">Голосовой поиск</string>
+    <string name="abc_shareactionprovider_share_with">Открыть доступ</string>
+    <string name="abc_shareactionprovider_share_with_application">Открыть доступ пользователю %s</string>
+    <string name="add_new_tag">Новая группа</string>
+    <string name="all_tag">Все</string>
+    <string name="app_name">Блокнот</string>
+    <string name="audio_note">Аудио-заметка</string>
+    <string name="cancel">Отмена</string>
+    <string name="cancel_hightlight">Отменить выделение</string>
+    <string name="convert_to_note">Преобразовать в заметку</string>
+    <string name="create_sharing">Начало передачи. Пожалуйста, подождите…</string>
+    <string name="create_time">Создано:</string>
+    <string name="date_time_set">Установить</string>
+    <string name="default_tag_life">Ежедневник</string>
+    <string name="default_tag_temp">Черновик</string>
+    <string name="default_tag_work">Работа</string>
+    <string name="delete">Удалить</string>
+    <string name="delete_one_tag">Удалить эту группу?</string>
+    <string name="delete_one_tip">Удалить эту заметку?</string>
+    <string name="delete_tag_tip">Заметки не будут удалены</string>
+    <string name="delete_tip">Удалить выбранное?</string>
+    <string name="deleting">Удаление</string>
+    <string name="edit_hint">Текст</string>
+    <string name="edit_title">Название</string>
+    <string name="exporting">Начало экспорта. Пожалуйста, подождите…</string>
+    <string name="faild_to_create_file">Ошибка создания файла</string>
+    <string name="finish_export">Экспорт завершен</string>
+    <string name="fmt_pre_yesterday">Вчера</string>
+    <string name="folder_already_exsite">Группа уже существует</string>
+    <string name="folder_null_not_save">Пустая группа не может быть сохранена</string>
+    <string name="group_created">Группа создана</string>
+    <string name="image_limit_tip">Максимальное количество картинок не должно превышать 10</string>
+    <string name="insert_pic_title">Вставить картинку</string>
+    <string name="insert_sd_card">Подключить USB-накопитель</string>
+    <string name="last_modified">Последнее изменение:</string>
+    <string name="lock_month_day">d MMMM</string>
+    <string name="lock_week">yyyy M d (EEEE)</string>
+    <string name="max_length_reached">Достигнута максимальная длина</string>
+    <string name="mc_action_settings">Настройки</string>
+    <string name="mc_cancel">Отмена</string>
+    <string name="mc_description_target_answer">Правильный вариант</string>
+    <string name="mc_description_target_decline">Отклонить</string>
+    <string name="mc_every_day">Ежедневно</string>
+    <string name="mc_friday">ПТ</string>
+    <string name="mc_hour">Час.</string>
+    <string name="mc_minute">Мин.</string>
+    <string name="mc_monday">ПН</string>
+    <string name="mc_never">Единожды</string>
+    <string name="mc_saturday">СБ</string>
+    <string name="mc_second">Сек.</string>
+    <string name="mc_sunday">ВС</string>
+    <string name="mc_thursday">ЧТ</string>
+    <string name="mc_tuesday">ВТ</string>
+    <string name="mc_wednesday">СР</string>
+    <string name="mc_weekend">Выходные</string>
+    <string name="mc_working_day">Рабочие дни</string>
+    <string name="mc_yes">ОК</string>
+    <string name="menu_change_paper">Изменить фон</string>
+    <string name="menu_delete">Удалить</string>
+    <string name="menu_encrypt">Шифровать</string>
+    <string name="menu_export_pic">Экспорт в картинку</string>
+    <string name="menu_export_text">Экспорт в текст</string>
+    <string name="menu_float">Режим окна</string>
+    <string name="menu_share">Передать</string>
+    <string name="menu_tip_edit">Изменить</string>
+    <string name="menu_tip_list">Список</string>
+    <string name="menu_tip_pic">Картинка</string>
+    <string name="menu_tip_record">Запись</string>
+    <string name="menu_top">Избранное</string>
+    <string name="more_item_label">Ещё</string>
+    <string name="mz_date_time_day">д</string>
+    <string name="mz_date_time_hour">ч</string>
+    <string name="mz_date_time_min">м</string>
+    <string name="mz_date_time_month">м</string>
+    <string name="mz_date_time_sec">с</string>
+    <string name="mz_date_time_year">г</string>
+    <string name="mz_numeric_date_format_dmy">EEE, d/M/yyyy</string>
+    <string name="mz_numeric_date_format_dym">EEE, d/yyyy/M</string>
+    <string name="mz_numeric_date_format_mdy">EEE, M/d/yyyy</string>
+    <string name="mz_numeric_date_format_myd">EEE, M/yyyy/d</string>
+    <string name="mz_numeric_date_format_ydm">yyyy/d/M, EEE</string>
+    <string name="mz_numeric_date_format_ymd">yyyy/M/d, EEE</string>
+    <string name="new_tag">Новая группа</string>
+    <string name="new_tag_pop">Группа</string>
+    <string name="no_note">Нет заметок</string>
+    <string name="note_group">Группа</string>
+    <string name="note_not_exist">Этой заметки не существует</string>
+    <string name="ok">ОК</string>
+    <string name="panel_color">Цвет</string>
+    <string name="pattern_a_hour_before">1 час назад</string>
+    <string name="pattern_a_minute_before">1 минуту назад</string>
+    <string name="pattern_hour_before">, часов назад</string>
+    <string name="pattern_minute_before">, минут назад</string>
+    <string name="pattern_month_day" formatted="false">%-m/%-e</string>
+    <string name="pattern_month_day_hour_minute" formatted="false">%-m/%-e %H:%M</string>
+    <string name="pattern_month_day_hour_minute_12" formatted="false">%-m/%-e %p %I:%M</string>
+    <string name="pattern_week_month_day_hour_minute" formatted="false">%a %-m/%-e %H:%M</string>
+    <string name="pattern_week_month_day_hour_minute_12" formatted="false">%a %-m/%-e %p %I:%M</string>
+    <string name="pattern_year_month" formatted="false">%Y/%-m</string>
+    <string name="pattern_year_month_day" formatted="false">%Y/%-m/%-e</string>
+    <string name="pattern_year_month_day_hour_minute" formatted="false">%Y/%-m/%-e %H:%M</string>
+    <string name="pattern_year_month_day_hour_minute_12" formatted="false">%Y/%-m/%-e %p %I:%M</string>
+    <string name="pattern_yesterday">Вчера</string>
+    <string name="record">Сделать запись</string>
+    <string name="record_fail">Ошибка записи</string>
+    <string name="record_limit_tip">Максимальное количество записей не должно превышать 10</string>
+    <string name="record_too_short">Запись менее 1 секунды. Отмена.</string>
+    <string name="recording_stopped">Запись остановлена</string>
+    <string name="see_more">Смотреть еще</string>
+    <string name="share">Передать</string>
+    <string name="share_via">Передать через</string>
+    <string name="short_edit_hint">Нажать для записи</string>
+    <string name="storage_is_full">Память заполнена</string>
+    <string name="tip_delete_pic">Удалить картинку?</string>
+    <string name="tip_delete_record">Удалить запись?</string>
+    <string name="tip_empty_content">Нет содержимого</string>
+    <string name="tip_no_file">Файл не найден</string>
+    <string name="toast_tag_limit">Количество групп достигло лимита</string>
+    <string name="voice_error_audio">Ошибка записи аудио</string>
+    <string name="voice_error_client">Ошибка голосового клиента</string>
+    <string name="voice_error_insufficient_permissions">Недостаточно прав</string>
+    <string name="voice_error_network">Другие ошибки, связанные с сетью</string>
+    <string name="voice_error_network_timeout">Тайм-аут сети</string>
+    <string name="voice_error_no_match">Не удалось распознать результат</string>
+    <string name="voice_error_recognizer_busy">Сервис распознавания занят</string>
+    <string name="voice_error_server">Обнаружена ошибка сервера</string>
+    <string name="voice_error_speech_timeout">Нет голосового ввода</string>
+    <string name="pattern_day_month" formatted="false">%-e/%-m</string>
+    <string name="pattern_day_month_hour_minute" formatted="false">%-e/%-m %H:%M</string>
+    <string name="pattern_day_month_hour_minute_12" formatted="false">%-e/%-m %p %I:%M</string>
+    <string name="pattern_day_month_year" formatted="false">%-e/%-m/%Y</string>
+    <string name="pattern_day_month_year_hour_minute" formatted="false">%-e/%-m/%Y %H:%M</string>
+    <string name="pattern_day_month_year_hour_minute_12" formatted="false">%-e/%-m/%Y %p %I:%M</string>
+    <string name="pattern_month_year" formatted="false">%-m/%Y</string>
+    <string name="pattern_week_day_month_hour_minute" formatted="false">%a %-e/%-m %H:%M</string>
+    <string name="pattern_week_day_month_hour_minute_12" formatted="false">%a %-e/%-m %p %I:%M</string>
+</resources>

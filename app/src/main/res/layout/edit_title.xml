@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/toolBar" android:layout_width="fill_parent" android:layout_height="@dimen/mz_action_bar_default_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meizu.widget.EditTextCloud android:textSize="@dimen/edit_title_font_size" android:textColor="#cc000000" android:textColorHint="@color/common_grey_color" android:id="@id/title" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/edit_text_margin" android:hint="@string/edit_title" android:singleLine="true" android:includeFontPadding="false" android:maxLength="100" android:layout_weight="1.0" android:imeOptions="actionNext" />
+    <ImageView android:id="@id/undo" android:background="@null" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="27.0dip" android:layout_marginRight="46.5dip" android:src="@drawable/undo_selector" android:scaleType="centerInside" />
+    <ImageView android:id="@id/redo" android:background="@null" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="27.0dip" android:src="@drawable/redo_selector" android:scaleType="centerInside" />
+</LinearLayout>

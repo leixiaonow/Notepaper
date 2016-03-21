@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/mz_action_button_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="16.0sp" android:textColor="#4c000000" android:id="@id/info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_note" android:includeFontPadding="false" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/encrypt_tip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="28.0dip" android:layout_marginRight="28.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="#80000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="17.0dip" android:text="@string/encrypt_tip_title" android:includeFontPadding="false" />
+        <ImageView android:background="#33000000" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="18.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="#4c000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip" android:text="@string/encrypt_tip" android:includeFontPadding="false" android:lineSpacingExtra="@dimen/stagger_line_space" />
+    </LinearLayout>
+    <com.meizu.widget.StaggeredGridView android:scrollbarStyle="outsideOverlay" android:id="@id/staggeredGridView" android:paddingLeft="@dimen/stagger_margin_left" android:paddingTop="@dimen/stagger_margin_top" android:paddingRight="@dimen/stagger_margin_right" android:paddingBottom="@dimen/stagger_margin_bottom" android:scrollbars="vertical" android:fadingEdge="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

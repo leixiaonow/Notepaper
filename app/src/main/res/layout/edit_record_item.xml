@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meizu.flyme.notepaper.widget.RichFrameLayout android:orientation="horizontal" android:tag="record" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meizu.flyme.notepaper.widget.RecordLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/recordLayout" android:background="@drawable/background_edit_record" android:layout_width="fill_parent" android:layout_height="@dimen/edit_record_height" android:layout_marginLeft="@dimen/edit_record_horizontal_margin" android:layout_marginBottom="@dimen/edit_record_bottom_margin" android:layout_weight="1.0">
+        <SeekBar android:id="@id/player_seekbar" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/edit_record_seekbar_left_margin" android:maxWidth="200.0dip" android:maxHeight="@dimen/edit_record_height" android:progressDrawable="@drawable/record_progress" android:thumb="@null" android:thumbOffset="0.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="14.0sp" android:textColor="#ffea5246" android:id="@id/player_passtime" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="14.0sp" android:textColor="#80000000" android:id="@id/player_totaltime" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageButton android:gravity="center" android:id="@id/delete" android:background="@null" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/edit_record_delete_right_margin" android:src="@drawable/btn_record_delete" android:scaleType="centerInside" />
+        <ImageButton android:gravity="center" android:id="@id/player_control" android:background="@null" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/edit_record_play_right_margin" android:src="@drawable/btn_record_play" android:scaleType="centerInside" />
+    </com.meizu.flyme.notepaper.widget.RecordLinearLayout>
+    <EditText android:id="@id/edit" android:background="@null" android:layout_width="@dimen/edit_record_horizontal_margin" android:layout_height="fill_parent" android:layout_marginBottom="0.0dip" android:cursorVisible="false" android:layout_alignParentRight="true" />
+</com.meizu.flyme.notepaper.widget.RichFrameLayout>
