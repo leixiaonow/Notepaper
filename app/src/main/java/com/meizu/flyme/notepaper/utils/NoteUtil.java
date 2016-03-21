@@ -8,12 +8,14 @@ import android.text.format.DateFormat;
 import android.text.format.DateUtils;
 import android.text.format.Time;
 import android.util.Log;
+
 import com.meizu.cloud.common.reflect.EnvironmentUtils;
 import com.meizu.common.util.LunarCalendar;
 import com.meizu.flyme.notepaper.Config;
 import com.meizu.flyme.notepaper.database.NotePaper;
-import com.meizu.notepaper.R;
+import com.meizu.flyme.notepaper.notepaper.R;
 import com.meizu.pim.HanziToPinyin.Token;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

@@ -251,12 +251,14 @@ public class NotePaperProvider extends ContentProvider {
 
     }
 
+    @Override
     //创建DatabaseHelper是为了创建数据库和表
     public boolean onCreate() {
         this.mOpenHelper = new DatabaseHelper(getContext());
         return true;
     }
 
+    @Override
     //所有的查询都在这里执行
     public Cursor query(Uri uri, String[] projection, String selection, String[] selectionArgs, String sortOrder) {
         String orderBy;
@@ -347,6 +349,7 @@ public class NotePaperProvider extends ContentProvider {
         return c;
     }
 
+    @Override
     //通过sUriMatcher.match(uri)匹配uri那种类型的查询
     public String getType(Uri uri) {
         switch (sUriMatcher.match(uri)) {
@@ -373,7 +376,8 @@ public class NotePaperProvider extends ContentProvider {
         }
     }
 
-    //插入，所有数据库的插入insert都在这里
+    @Override
+    //插入，所有数据库的插入insert都在这里，传入ContentValues，
     public Uri insert(Uri uri, ContentValues initialValues) {
         SQLiteDatabase db = this.mOpenHelper.getWritableDatabase();
         ContentValues values;
@@ -482,6 +486,7 @@ public class NotePaperProvider extends ContentProvider {
     }
 
 
+    @Override
     //所有数据库的删除delete都在这里
     public int delete(Uri uri, String where, String[] whereArgs) {
         int count;
@@ -559,6 +564,7 @@ public class NotePaperProvider extends ContentProvider {
         return count;
     }
 
+    @Override
     //所有数据库的update都在这里，只能更新某些数据库
     public int update(Uri uri, ContentValues values, String where, String[] whereArgs) {
         int count;
@@ -690,6 +696,7 @@ public class NotePaperProvider extends ContentProvider {
     }
 
     //没搞懂，批量插入数据库
+    @Override
     public int bulkInsert(Uri uri, ContentValues[] values) {
 /*        Log.d(TAG, "start ");
         if (sUriMatcher.match(uri) != OLD_NOTES) {
@@ -750,6 +757,7 @@ public class NotePaperProvider extends ContentProvider {
     }
 
     //没搞懂，这是干什么的
+    @Override
     public ParcelFileDescriptor openFile(Uri uri, String mode) throws FileNotFoundException {
         ParcelFileDescriptor fileDescriptor = null;
 /*        Cursor cursor;
@@ -819,6 +827,7 @@ public class NotePaperProvider extends ContentProvider {
     }
 
     //好像是通知更新界面
+
     public void notifyAppWidgetUpdated(Context context) {
     //    ((NoteApplication) context.getApplicationContext()).notifyWidgetUpdate();
     }
